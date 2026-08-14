@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hi, I'm Vamshi Dhar Reddy 👋
+# Hi, I'm Vamshidhar Reddy 👋
 
 ### Structural Dynamics | NVH Simulation | Scientific ML & CAE Automation
 
