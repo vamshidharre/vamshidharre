@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hi there, I'm Vamshi Dhar Reddy 👋
+# Hi there, I'm Vamshidhar Reddy 👋
 
 ### Full-Stack & Backend Engineer | Micro-SaaS Builder | AI & Automation
 
