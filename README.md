@@ -7,7 +7,7 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3500&pause=800&color=58A6FF&center=true&vCenter=true&width=650&lines=CAE+%26+Structural+Dynamics+Engineer;NVH+%7C+Vibroacoustics+%7C+Harmonic+Response;Scientific+ML+%7C+Fast+Surrogate+Modeling;Agentic+FEA+%7C+Claude+MCP+%7C+PyMechanical;FEA+Automation+%7C+NX+Open+API+%7C+HPC+Orchestration)](https://git.io/typing-svg)
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/vamshidhar-reddy-7180551a2/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://www.linkedin.com/in/vamshidhar-reddy-eng/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="https://vamshidhar-portfolio.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-Live_Site-00C7B7?style=flat&logo=netlify&logoColor=white" alt="Portfolio" /></a>
   <a href="mailto:vamshidharreddye@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://github.com/vamshidharre"><img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" alt="GitHub" /></a>
