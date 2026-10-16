@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" role="img" aria-labelledby="tc-title tc-desc">
+  <title id="tc-title">Computational Stack &amp; Tooling</title>
+  <desc id="tc-desc">CAE &amp; FEA Solvers: Ansys Mechanical, NASTRAN, Simcenter 3D, HyperMesh. Scientific ML: PyTorch, scikit-learn, PINNs, DIMGP. Vibroacoustics: Modal, Harmonic, FFT, SPL. Agentic &amp; Automation: Claude MCP, PyMechanical, NX Open API. Languages: Python, C++, TypeScript.</desc>
+  <defs>
+    <linearGradient id="tc-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0A1122"/><stop offset="1" stop-color="#050811"/>
+    </linearGradient>
+    <radialGradient id="tc-glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0" stop-color="#0284C7" stop-opacity=".4"/><stop offset="1" stop-color="#0284C7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="tc-pulse">
+      <stop offset="0" stop-color="#F8FAFC"/><stop offset=".5" stop-color="#38BDF8" stop-opacity=".6"/><stop offset="1" stop-color="#0284C7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tc-trace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F8FAFC"/><stop offset=".45" stop-color="#38BDF8"/><stop offset="1" stop-color="#0284C7" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .tc-serif { font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif; }
+    .tc-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    .tc-panel { animation: tc-in 1.1s cubic-bezier(.16,1,.3,1) both; }
+    .tc-p1 { animation-delay: .05s; } .tc-p2 { animation-delay: .2s; } .tc-p3 { animation-delay: .35s; }
+    .tc-p4 { animation-delay: .5s; } .tc-p5 { animation-delay: .65s; } .tc-p6 { animation-delay: .8s; }
+    .tc-web { stroke-dasharray: 1800; stroke-dashoffset: 1800; animation: tc-draw 3s cubic-bezier(.65,0,.35,1) 1s forwards; }
+    @keyframes tc-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+    @keyframes tc-draw { to { stroke-dashoffset: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .tc-panel { animation: none; }
+      .tc-web { animation: none; stroke-dashoffset: 0; }
+    }
+  </style>
+
+  <rect width="1200" height="500" rx="20" fill="url(#tc-bg)"/>
+  <rect width="1200" height="500" rx="20" fill="url(#tc-glow)"/>
+  <rect x=".5" y=".5" width="1199" height="499" rx="19.5" fill="none" stroke="#38BDF8" stroke-opacity=".18"/>
+
+  <!-- Constellation: gutters linking the six groups -->
+  <path class="tc-web" d="M24 250 H1176 M406 24 V476 M794 24 V476" fill="none" stroke="#38BDF8" stroke-opacity=".22"/>
+  <circle cx="0" cy="250" r="8" fill="url(#tc-pulse)" opacity="0">
+    <animate attributeName="cx" values="24;1176" dur="9s" begin="3s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines=".45 0 .55 1"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.9;1" dur="9s" begin="3s" repeatCount="indefinite"/>
+  </circle>
+  <g fill="#050811" stroke="#38BDF8">
+    <rect x="400" y="244" width="12" height="12" transform="rotate(45 406 250)"/>
+    <rect x="788" y="244" width="12" height="12" transform="rotate(45 794 250)"/>
+  </g>
+
+  <!-- Panel 1: CAE & FEA Solvers -->
+  <g class="tc-panel tc-p1"><g transform="translate(32 32)">
+    <rect width="360" height="200" rx="14" fill="#0D162B" fill-opacity=".85" stroke="#38BDF8" stroke-opacity=".22"/>
+    <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#38BDF8">01  CAE &amp; FEA SOLVERS</text>
+    <text class="tc-serif" x="24" y="86" font-size="30" font-weight="300" fill="#F8FAFC">Ansys Mechanical <tspan font-size="11" class="tc-mono" fill="#38BDF8" dy="-14">CORE</tspan></text>
+    <text class="tc-serif" x="24" y="130" font-size="26" font-weight="300" fill="#F8FAFC">NASTRAN · Simcenter 3D</text>
+    <text class="tc-serif" x="24" y="170" font-size="20" font-weight="300" fill="#94A3B8">HyperMesh · Abaqus · OpenCFS</text>
+  </g></g>
+
+  <!-- Panel 2: Scientific ML & Surrogates -->
+  <g class="tc-panel tc-p2"><g transform="translate(420 32)">
+    <rect width="360" height="200" rx="14" fill="#0D162B" fill-opacity=".85" stroke="#38BDF8" stroke-opacity=".22"/>
+    <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#38BDF8">02  SCIENTIFIC ML &amp; SURROGATES</text>
+    <text class="tc-serif" x="24" y="86" font-size="30" font-weight="300" fill="#F8FAFC">PyTorch · scikit-learn</text>
+    <text class="tc-serif" x="24" y="130" font-size="26" font-weight="300" fill="#F8FAFC">FRF Surrogates · PINNs</text>
+    <text class="tc-serif" x="24" y="170" font-size="20" font-weight="300" fill="#94A3B8">DIMGP · Neural Operators · POD-ROM</text>
+  </g></g>
+
+  <!-- Panel 3: Vibroacoustics & NVH -->
+  <g class="tc-panel tc-p3"><g transform="translate(808 32)">
+    <rect width="360" height="200" rx="14" fill="#0D162B" fill-opacity=".85" stroke="#38BDF8" stroke-opacity=".22"/>
+    <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#38BDF8">03  VIBROACOUSTICS &amp; NVH</text>
+    <text class="tc-serif" x="24" y="86" font-size="30" font-weight="300" fill="#F8FAFC">Modal &amp; Harmonic Response</text>
+    <text class="tc-serif" x="24" y="130" font-size="26" font-weight="300" fill="#F8FAFC">FFT &amp; Order Tracking</text>
+    <text class="tc-serif" x="24" y="170" font-size="20" font-weight="300" fill="#94A3B8">SPL Sound Fields · Maxwell Mapping</text>
+  </g></g>
+
+  <!-- Panel 4: Agentic & Automation -->
+  <g class="tc-panel tc-p4"><g transform="translate(32 268)">
+    <rect width="360" height="200" rx="14" fill="#0D162B" fill-opacity=".85" stroke="#38BDF8" stroke-opacity=".22"/>
+    <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#38BDF8">04  AGENTIC &amp; SIMULATION AI</text>
+    <text class="tc-serif" x="24" y="86" font-size="30" font-weight="300" fill="#F8FAFC">Claude MCP <tspan font-size="11" class="tc-mono" fill="#38BDF8" dy="-14">PROTOCOL</tspan></text>
+    <text class="tc-serif" x="24" y="130" font-size="26" font-weight="300" fill="#F8FAFC">PyMechanical · NX Open API</text>
+    <text class="tc-serif" x="24" y="170" font-size="20" font-weight="300" fill="#94A3B8">SLURM HPC · Linux Bash · Git</text>
+  </g></g>
+
+  <!-- Panel 5: Software & Computation -->
+  <g class="tc-panel tc-p5"><g transform="translate(420 268)">
+    <rect width="360" height="200" rx="14" fill="#0D162B" fill-opacity=".85" stroke="#38BDF8" stroke-opacity=".22"/>
+    <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#38BDF8">05  PROGRAMMING &amp; WEB</text>
+    <text class="tc-serif" x="24" y="86" font-size="30" font-weight="300" fill="#F8FAFC">Python <tspan font-size="11" class="tc-mono" fill="#38BDF8" dy="-14">PRIMARY</tspan></text>
+    <text class="tc-serif" x="24" y="130" font-size="26" font-weight="300" fill="#F8FAFC">C++ · TypeScript</text>
+    <text class="tc-serif" x="24" y="170" font-size="20" font-weight="300" fill="#94A3B8">React · Three.js · Docker · FastAPI</text>
+  </g></g>
+
+  <!-- Panel 6: Affiliations & Credentials -->
+  <g class="tc-panel tc-p6"><g transform="translate(808 268)">
+    <rect width="360" height="200" rx="14" fill="#0D162B" fill-opacity=".85" stroke="#38BDF8" stroke-opacity=".22"/>
+    <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#38BDF8">06  AFFILIATIONS &amp; CREDS</text>
+    <text class="tc-serif" x="24" y="86" font-size="30" font-weight="300" fill="#F8FAFC">FAU Erlangen-Nürnberg</text>
+    <text class="tc-serif" x="24" y="130" font-size="26" font-weight="300" fill="#F8FAFC">Mercedes-Benz · Valeo</text>
+    <text class="tc-serif" x="24" y="170" font-size="20" font-weight="300" fill="#94A3B8">English C2 · German B2 · Class B</text>
+  </g></g>
+</svg>
