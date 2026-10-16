@@ -2,13 +2,13 @@
   <title id="p1-t">Agentic FEA: 3D Aerospace Bracket Modal Analysis via Claude MCP &amp; Ansys 2026 R1</title>
   <defs>
     <linearGradient id="p1-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0A1122"/><stop offset="1" stop-color="#050811"/>
+      <stop offset="0" stop-color="#0E131E"/><stop offset="1" stop-color="#06080D"/>
     </linearGradient>
     <radialGradient id="p1-glow" cx="82%" cy="30%" r="55%">
-      <stop offset="0" stop-color="#0284C7" stop-opacity=".65"/><stop offset="1" stop-color="#1E40AF" stop-opacity="0"/>
+      <stop offset="0" stop-color="#1D4ED8" stop-opacity=".55"/><stop offset="1" stop-color="#1E3A8A" stop-opacity="0"/>
     </radialGradient>
     <pattern id="p1-grid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M28 0H0V28" fill="none" stroke="#38BDF8" stroke-opacity=".08"/>
+      <path d="M28 0H0V28" fill="none" stroke="#60A5FA" stroke-opacity=".06"/>
     </pattern>
     <filter id="p1-glowf" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
@@ -16,17 +16,17 @@
     <clipPath id="p1-clip"><rect width="1200" height="370" rx="18"/></clipPath>
   </defs>
   <style>
-    .p1-serif { font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif; }
-    .p1-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
-    .p1-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
-    .p1-in { animation: p1-in 1.2s cubic-bezier(.16,1,.3,1) both; }
-    .p1-d1 { animation-delay: .15s; } .p1-d2 { animation-delay: .4s; }
-    .p1-chip { animation: p1-chip .7s cubic-bezier(.34,1.56,.64,1) both; }
-    .p1-draw { stroke-dasharray: 600; stroke-dashoffset: 600; animation: p1-draw 2s cubic-bezier(.65,0,.35,1) .5s forwards; }
-    @keyframes p1-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
-    @keyframes p1-chip { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
-    @keyframes p1-draw { to { stroke-dashoffset: 0; } }
-    @media (prefers-reduced-motion: reduce) { .p1-in, .p1-chip { animation: none; } .p1-draw { animation: none; stroke-dashoffset: 0; } }
+    .p1-serif {{ font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif; }}
+    .p1-mono {{ font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }}
+    .p1-sans {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }}
+    .p1-in {{ animation: p1-in 1.2s cubic-bezier(.16,1,.3,1) both; }}
+    .p1-d1 {{ animation-delay: .15s; }} .p1-d2 {{ animation-delay: .4s; }}
+    .p1-chip {{ animation: p1-chip .7s cubic-bezier(.34,1.56,.64,1) both; }}
+    .p1-draw {{ stroke-dasharray: 600; stroke-dashoffset: 600; animation: p1-draw 2s cubic-bezier(.65,0,.35,1) .5s forwards; }}
+    @keyframes p1-in {{ from {{ opacity: 0; transform: translateY(12px); }} to {{ opacity: 1; transform: none; }} }}
+    @keyframes p1-chip {{ from {{ opacity: 0; transform: translateY(8px); }} to {{ opacity: 1; transform: none; }} }}
+    @keyframes p1-draw {{ to {{ stroke-dashoffset: 0; }} }}
+    @media (prefers-reduced-motion: reduce) {{ .p1-in, .p1-chip {{ animation: none; }} .p1-draw {{ animation: none; stroke-dashoffset: 0; }} }}
   </style>
   <g clip-path="url(#p1-clip)">
     <rect width="1200" height="370" fill="url(#p1-bg)"/>
@@ -34,11 +34,11 @@
     <rect width="1200" height="370" fill="url(#p1-glow)"/>
 
     <g class="p1-in p1-d1">
-      <text class="p1-mono" x="56" y="62" font-size="12" letter-spacing="2.6" fill="#38BDF8">01 · AGENTIC CAE · ANSYS 2026 R1 · MCP</text>
+      <text class="p1-mono" x="56" y="62" font-size="12" letter-spacing="2.6" fill="#60A5FA">01 · AGENTIC CAE · ANSYS 2026 R1 · MCP</text>
       <text class="p1-serif" x="54" y="126" font-size="50" font-weight="300" letter-spacing="-1.5" fill="#F8FAFC">Agentic FEA: Modal Analysis</text>
       <text class="p1-sans" x="56" y="166" font-size="17" fill="#94A3B8">3D aerospace bracket modal vibration analysis via Claude MCP &amp; PyMechanical.</text>
-      <text class="p1-mono" x="56" y="200" font-size="12.5" fill="#BAE6FD"><tspan fill="#38BDF8">PIPELINE ›</tspan> CAD import → solid meshing → contact pairs → Block Lanczos eigenvalue solve → contour plots</text>
-      <line class="p1-draw" x1="56" y1="226" x2="680" y2="226" stroke="#38BDF8" stroke-opacity=".3"/>
+      <text class="p1-mono" x="56" y="200" font-size="12.5" fill="#93C5FD"><tspan fill="#60A5FA">PIPELINE ›</tspan> CAD import → solid meshing → contact pairs → Block Lanczos eigenvalue solve → contour plots</text>
+      <line class="p1-draw" x1="56" y1="226" x2="680" y2="226" stroke="#2563EB" stroke-opacity=".4"/>
 
       <!-- Metrics -->
       <g transform="translate(56 266)"><text class="p1-serif" font-size="34" font-weight="300" fill="#F8FAFC">6 Modes</text><text class="p1-sans" y="24" font-size="12.5" fill="#94A3B8">Eigenvalue extraction</text></g>
@@ -46,62 +46,54 @@
       <g transform="translate(466 266)"><text class="p1-serif" font-size="34" font-weight="300" fill="#F8FAFC">Zero-Click</text><text class="p1-sans" y="24" font-size="12.5" fill="#94A3B8">CAD to contour plots</text></g>
 
       <!-- Chips -->
-      <g class="p1-chip" style="animation-delay:1.00s"><rect x="56" y="314" width="130" height="26" rx="13" fill="#0D1A36" stroke="#38BDF8" stroke-opacity=".35"/><text class="p1-mono" x="121" y="331" text-anchor="middle" font-size="11.5" fill="#BAE6FD">Ansys 2026 R1</text></g>
-      <g class="p1-chip" style="animation-delay:1.12s"><rect x="194" y="314" width="105" height="26" rx="13" fill="#0D1A36" stroke="#38BDF8" stroke-opacity=".35"/><text class="p1-mono" x="246" y="331" text-anchor="middle" font-size="11.5" fill="#BAE6FD">PyMechanical</text></g>
-      <g class="p1-chip" style="animation-delay:1.24s"><rect x="307" y="314" width="95" height="26" rx="13" fill="#0D1A36" stroke="#38BDF8" stroke-opacity=".35"/><text class="p1-mono" x="354" y="331" text-anchor="middle" font-size="11.5" fill="#BAE6FD">Claude MCP</text></g>
-      <g class="p1-chip" style="animation-delay:1.36s"><rect x="410" y="314" width="105" height="26" rx="13" fill="#0D1A36" stroke="#38BDF8" stroke-opacity=".35"/><text class="p1-mono" x="462" y="331" text-anchor="middle" font-size="11.5" fill="#BAE6FD">Block Lanczos</text></g>
-      <g class="p1-chip" style="animation-delay:1.48s"><rect x="523" y="314" width="70" height="26" rx="13" fill="#0D1A36" stroke="#38BDF8" stroke-opacity=".35"/><text class="p1-mono" x="558" y="331" text-anchor="middle" font-size="11.5" fill="#BAE6FD">Python</text></g>
+      <g class="p1-chip" style="animation-delay:1.00s"><rect x="56" y="314" width="130" height="26" rx="13" fill="#111726" stroke="#2563EB" stroke-opacity=".45"/><text class="p1-mono" x="121" y="331" text-anchor="middle" font-size="11.5" fill="#93C5FD">Ansys 2026 R1</text></g>
+      <g class="p1-chip" style="animation-delay:1.12s"><rect x="194" y="314" width="105" height="26" rx="13" fill="#111726" stroke="#2563EB" stroke-opacity=".45"/><text class="p1-mono" x="246" y="331" text-anchor="middle" font-size="11.5" fill="#93C5FD">PyMechanical</text></g>
+      <g class="p1-chip" style="animation-delay:1.24s"><rect x="307" y="314" width="95" height="26" rx="13" fill="#111726" stroke="#2563EB" stroke-opacity=".45"/><text class="p1-mono" x="354" y="331" text-anchor="middle" font-size="11.5" fill="#93C5FD">Claude MCP</text></g>
+      <g class="p1-chip" style="animation-delay:1.36s"><rect x="410" y="314" width="105" height="26" rx="13" fill="#111726" stroke="#2563EB" stroke-opacity=".45"/><text class="p1-mono" x="462" y="331" text-anchor="middle" font-size="11.5" fill="#93C5FD">Block Lanczos</text></g>
+      <g class="p1-chip" style="animation-delay:1.48s"><rect x="523" y="314" width="70" height="26" rx="13" fill="#111726" stroke="#2563EB" stroke-opacity=".45"/><text class="p1-mono" x="558" y="331" text-anchor="middle" font-size="11.5" fill="#93C5FD">Python</text></g>
     </g>
 
     <!-- Right Side 3D FEA Bracket Visual Artwork -->
     <g class="p1-in p1-d2" transform="translate(760 40)">
-      <!-- 3D Bracket Isometric Projection Mesh -->
-      <g stroke="#38BDF8" stroke-width="1.3" fill="none">
-        <!-- Isometric Base Flange -->
-        <polygon points="50,220 180,270 330,210 200,160" fill="#0E1A33" stroke="#0284C7" stroke-width="1.5"/>
-        <polygon points="50,220 50,240 180,290 180,270" fill="#091224" stroke="#0284C7"/>
-        <polygon points="180,270 180,290 330,230 330,210" fill="#060C1A" stroke="#0284C7"/>
+      <g stroke="#3B82F6" stroke-width="1.3" fill="none">
+        <polygon points="50,220 180,270 330,210 200,160" fill="#0C1322" stroke="#1D4ED8" stroke-width="1.5"/>
+        <polygon points="50,220 50,240 180,290 180,270" fill="#080D17" stroke="#1D4ED8"/>
+        <polygon points="180,270 180,290 330,230 330,210" fill="#050810" stroke="#1D4ED8"/>
 
-        <!-- Vertical Rib / Bracket Body -->
-        <polygon points="120,185 180,205 180,85 120,65" fill="#13274F" stroke="#38BDF8"/>
-        <polygon points="180,205 240,185 240,65 180,85" fill="#0A1630" stroke="#38BDF8"/>
+        <polygon points="120,185 180,205 180,85 120,65" fill="#101D36" stroke="#3B82F6"/>
+        <polygon points="180,205 240,185 240,65 180,85" fill="#0B1424" stroke="#3B82F6"/>
         
-        <!-- Top Mounting Lug -->
-        <polygon points="120,65 180,85 240,65 180,45" fill="#1E3A8A" stroke="#7DD3FC" stroke-width="1.5"/>
+        <polygon points="120,65 180,85 240,65 180,45" fill="#1D4ED8" stroke="#93C5FD" stroke-width="1.5"/>
 
-        <!-- FEA Solid Mesh Tessellation lines -->
-        <line x1="50" y1="220" x2="200" y2="160" stroke="#38BDF8" stroke-opacity=".3"/>
-        <line x1="180" y1="270" x2="330" y2="210" stroke="#38BDF8" stroke-opacity=".3"/>
-        <line x1="120" y1="65" x2="180" y2="205" stroke="#38BDF8" stroke-opacity=".3"/>
-        <line x1="240" y1="65" x2="180" y2="205" stroke="#38BDF8" stroke-opacity=".3"/>
-        <line x1="150" y1="75" x2="150" y2="195" stroke="#38BDF8" stroke-opacity=".3"/>
-        <line x1="210" y1="75" x2="210" y2="195" stroke="#38BDF8" stroke-opacity=".3"/>
+        <line x1="50" y1="220" x2="200" y2="160" stroke="#3B82F6" stroke-opacity=".25"/>
+        <line x1="180" y1="270" x2="330" y2="210" stroke="#3B82F6" stroke-opacity=".25"/>
+        <line x1="120" y1="65" x2="180" y2="205" stroke="#3B82F6" stroke-opacity=".25"/>
+        <line x1="240" y1="65" x2="180" y2="205" stroke="#3B82F6" stroke-opacity=".25"/>
+        <line x1="150" y1="75" x2="150" y2="195" stroke="#3B82F6" stroke-opacity=".25"/>
+        <line x1="210" y1="75" x2="210" y2="195" stroke="#3B82F6" stroke-opacity=".25"/>
 
-        <!-- Modal Displacement Wave Contour (f1) -->
-        <path d="M180 85 C 210 85, 230 140, 200 205" stroke="#00F2FE" stroke-width="2.5" filter="url(#p1-glowf)">
+        <path d="M180 85 C 210 85, 230 140, 200 205" stroke="#60A5FA" stroke-width="2.5" filter="url(#p1-glowf)">
           <animate attributeName="d" values="M180 85 C 210 85, 230 140, 200 205; M180 85 C 150 85, 130 140, 160 205; M180 85 C 210 85, 230 140, 200 205" dur="3s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1; .45 0 .55 1"/>
         </path>
       </g>
 
-      <!-- Bolt Hole Fixations -->
-      <circle cx="95" cy="235" r="7" fill="#060B14" stroke="#EF4444" stroke-width="1.5"/>
-      <circle cx="280" cy="225" r="7" fill="#060B14" stroke="#EF4444" stroke-width="1.5"/>
-      <circle cx="180" cy="65" r="8" fill="#060B14" stroke="#10B981" stroke-width="1.8"/>
+      <circle cx="95" cy="235" r="7" fill="#06080D" stroke="#EF4444" stroke-width="1.5"/>
+      <circle cx="280" cy="225" r="7" fill="#06080D" stroke="#EF4444" stroke-width="1.5"/>
+      <circle cx="180" cy="65" r="8" fill="#06080D" stroke="#10B981" stroke-width="1.8"/>
 
-      <!-- Floating Mode Frequency Badges -->
       <g transform="translate(250 30)" class="p1-mono">
-        <rect width="130" height="28" rx="6" fill="#0A1122" stroke="#38BDF8" stroke-opacity=".5"/>
-        <circle cx="14" cy="14" r="3.5" fill="#38BDF8"/>
+        <rect width="130" height="28" rx="6" fill="#0B111C" stroke="#2563EB" stroke-opacity=".5"/>
+        <circle cx="14" cy="14" r="3.5" fill="#60A5FA"/>
         <text x="26" y="18" font-size="11" fill="#F8FAFC">f₁: 142.8 Hz</text>
       </g>
       <g transform="translate(260 70)" class="p1-mono">
-        <rect width="130" height="28" rx="6" fill="#0A1122" stroke="#0284C7" stroke-opacity=".5"/>
-        <circle cx="14" cy="14" r="3.5" fill="#0284C7"/>
+        <rect width="130" height="28" rx="6" fill="#0B111C" stroke="#1D4ED8" stroke-opacity=".5"/>
+        <circle cx="14" cy="14" r="3.5" fill="#3B82F6"/>
         <text x="26" y="18" font-size="11" fill="#94A3B8">f₂: 284.1 Hz</text>
       </g>
       <g transform="translate(250 110)" class="p1-mono">
-        <rect width="130" height="28" rx="6" fill="#0A1122" stroke="#1E40AF" stroke-opacity=".5"/>
-        <circle cx="14" cy="14" r="3.5" fill="#1E40AF"/>
+        <rect width="130" height="28" rx="6" fill="#0B111C" stroke="#1E3A8A" stroke-opacity=".5"/>
+        <circle cx="14" cy="14" r="3.5" fill="#1E3A8A"/>
         <text x="26" y="18" font-size="11" fill="#94A3B8">f₃: 412.5 Hz</text>
       </g>
     </g>

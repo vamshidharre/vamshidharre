@@ -4,67 +4,64 @@
 
   <defs>
     <linearGradient id="ach-bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#0A1122"/>
-      <stop offset="1" stop-color="#050811"/>
+      <stop offset="0" stop-color="#0E131E"/>
+      <stop offset="1" stop-color="#06080D"/>
     </linearGradient>
     <radialGradient id="ach-glow-a" cx="85%" cy="0%" r="90%">
-      <stop offset="0" stop-color="#0284C7" stop-opacity=".75"/>
-      <stop offset="1" stop-color="#1E40AF" stop-opacity="0"/>
+      <stop offset="0" stop-color="#1D4ED8" stop-opacity=".65"/>
+      <stop offset="1" stop-color="#1E3A8A" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="ach-glow-b" cx="90%" cy="0%" r="90%">
-      <stop offset="0" stop-color="#38BDF8" stop-opacity=".35"/>
-      <stop offset="1" stop-color="#0284C7" stop-opacity="0"/>
+      <stop offset="0" stop-color="#2563EB" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#1E3A8A" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="ach-outline" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#38BDF8" stop-opacity=".45"/>
-      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+      <stop offset="0" stop-color="#93C5FD" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#3B82F6" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="ach-sheen" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#F8FAFC" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#F8FAFC" stop-opacity=".08"/>
-      <stop offset="1" stop-color="#F8FAFC" stop-opacity="0"/>
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".08"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
     </linearGradient>
     <clipPath id="ach-clip-a"><rect x="0" y="0" width="700" height="250" rx="16"/></clipPath>
     <clipPath id="ach-clip-b"><rect x="0" y="0" width="476" height="250" rx="16"/></clipPath>
-    <linearGradient id="ach-trace" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#F8FAFC"/><stop offset=".45" stop-color="#38BDF8"/><stop offset="1" stop-color="#0284C7" stop-opacity="0"/>
-    </linearGradient>
   </defs>
 
   <style>
-    .ach-serif { font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif; }
-    .ach-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
-    .ach-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
-    .ach-in { animation: ach-in 1.2s cubic-bezier(.16,1,.3,1) both; }
-    .a1 { animation-delay: .1s; } .a2 { animation-delay: .35s; } .a3 { animation-delay: .6s; }
-    .ach-draw { stroke-dasharray: 1200; stroke-dashoffset: 1200; animation: ach-draw 2.6s cubic-bezier(.65,0,.35,1) .8s forwards; }
-    @keyframes ach-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
-    @keyframes ach-draw { to { stroke-dashoffset: 0; } }
-    @media (prefers-reduced-motion: reduce) {
-      .ach-in { animation: none; }
-      .ach-draw { animation: none; stroke-dashoffset: 0; }
-    }
+    .ach-serif {{ font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif; }}
+    .ach-mono {{ font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }}
+    .ach-sans {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }}
+    .ach-in {{ animation: ach-in 1.2s cubic-bezier(.16,1,.3,1) both; }}
+    .a1 {{ animation-delay: .1s; }} .a2 {{ animation-delay: .35s; }} .a3 {{ animation-delay: .6s; }}
+    .ach-draw {{ stroke-dasharray: 1200; stroke-dashoffset: 1200; animation: ach-draw 2.6s cubic-bezier(.65,0,.35,1) .8s forwards; }}
+    @keyframes ach-in {{ from {{ opacity: 0; transform: translateY(14px); }} to {{ opacity: 1; transform: none; }} }}
+    @keyframes ach-draw {{ to {{ stroke-dashoffset: 0; }} }}
+    @media (prefers-reduced-motion: reduce) {{
+      .ach-in {{ animation: none; }}
+      .ach-draw {{ animation: none; stroke-dashoffset: 0; }}
+    }}
   </style>
 
   <rect width="1200" height="430" rx="20" fill="url(#ach-bg)"/>
-  <rect x=".5" y=".5" width="1199" height="429" rx="19.5" fill="none" stroke="#38BDF8" stroke-opacity=".18"/>
+  <rect x=".5" y=".5" width="1199" height="429" rx="19.5" fill="none" stroke="#3B82F6" stroke-opacity=".2"/>
 
   <!-- Card 1: Mercedes-Benz SciML Breakthrough (Left 700px) -->
   <g class="ach-in a1"><g transform="translate(24 24)">
     <g clip-path="url(#ach-clip-a)">
-      <rect width="700" height="250" fill="#0D162B"/>
+      <rect width="700" height="250" fill="#0F141F"/>
       <rect width="700" height="250" fill="url(#ach-glow-a)"/>
       <text class="ach-serif" x="684" y="115" text-anchor="end" font-size="110" font-weight="300" letter-spacing="-4" fill="url(#ach-outline)">6h → ms</text>
       <rect x="-300" y="0" width="260" height="250" fill="url(#ach-sheen)" transform="skewX(-18)">
         <animate attributeName="x" values="-300;900;900" keyTimes="0;.35;1" dur="9s" begin="2s" repeatCount="indefinite"/>
       </rect>
     </g>
-    <rect width="700" height="250" rx="16" fill="none" stroke="#38BDF8" stroke-opacity=".3"/>
+    <rect width="700" height="250" rx="16" fill="none" stroke="#2563EB" stroke-opacity=".35"/>
 
-    <text class="ach-mono" x="32" y="38" font-size="11" letter-spacing="2.4" fill="#38BDF8">SCIENTIFIC ML · MERCEDES-BENZ</text>
+    <text class="ach-mono" x="32" y="38" font-size="11" letter-spacing="2.4" fill="#60A5FA">SCIENTIFIC ML · MERCEDES-BENZ</text>
     <text class="ach-serif" x="32" y="82" font-size="34" font-weight="300" letter-spacing="-0.8" fill="#F8FAFC">6-Hour FEA Solves to Milliseconds</text>
     <text class="ach-sans" x="32" y="112" font-size="14.5" fill="#94A3B8">Benchmarked deep learning &amp; surrogate architectures predicting powertrain structural FRFs from NASTRAN.</text>
-    <text class="ach-mono" x="32" y="136" font-size="12" fill="#BAE6FD">Achieved highest curve-prediction skill score with HistGradientBoosting &amp; DIMGP.</text>
+    <text class="ach-mono" x="32" y="136" font-size="12" fill="#93C5FD">Achieved highest curve-prediction skill score with HistGradientBoosting &amp; DIMGP.</text>
 
     <!-- Stat Pillars -->
     <g transform="translate(32 176)">
@@ -84,16 +81,16 @@
   <!-- Card 2: Valeo Master Thesis NVH (Right 476px) -->
   <g class="ach-in a2"><g transform="translate(748 24)">
     <g clip-path="url(#ach-clip-b)">
-      <rect width="428" height="250" fill="#0D162B"/>
+      <rect width="428" height="250" fill="#0F141F"/>
       <rect width="428" height="250" fill="url(#ach-glow-b)"/>
       <text class="ach-serif" x="412" y="115" text-anchor="end" font-size="95" font-weight="300" letter-spacing="-4" fill="url(#ach-outline)">VALEO</text>
       <rect x="-300" y="0" width="260" height="250" fill="url(#ach-sheen)" transform="skewX(-18)">
         <animate attributeName="x" values="-300;700;700" keyTimes="0;.35;1" dur="9s" begin="3.5s" repeatCount="indefinite"/>
       </rect>
     </g>
-    <rect width="428" height="250" rx="16" fill="none" stroke="#38BDF8" stroke-opacity=".3"/>
+    <rect width="428" height="250" rx="16" fill="none" stroke="#2563EB" stroke-opacity=".35"/>
 
-    <text class="ach-mono" x="28" y="38" font-size="11" letter-spacing="2.4" fill="#38BDF8">MASTER THESIS · VALEO EAUTOMOTIVE</text>
+    <text class="ach-mono" x="28" y="38" font-size="11" letter-spacing="2.4" fill="#60A5FA">MASTER THESIS · VALEO EAUTOMOTIVE</text>
     <text class="ach-serif" x="28" y="82" font-size="30" font-weight="300" letter-spacing="-0.8" fill="#F8FAFC">E-Motor Stator NVH Isolation</text>
     <text class="ach-sans" x="28" y="112" font-size="13.5" fill="#94A3B8">FEA modal &amp; harmonic response correlating stator natural frequencies with physical test benches.</text>
 
@@ -110,27 +107,27 @@
 
   <!-- Bottom Metric Strip (4 columns) -->
   <g class="ach-in a3" transform="translate(24 298)">
-    <rect width="1152" height="106" rx="14" fill="#080E1C" stroke="#38BDF8" stroke-opacity=".2"/>
+    <rect width="1152" height="106" rx="14" fill="#0A0E17" stroke="#1E293B" stroke-width="1.2"/>
     <g transform="translate(32 24)">
-      <text class="ach-mono" font-size="10.5" letter-spacing="2" fill="#38BDF8">FAU ERLANGEN-NÜRNBERG</text>
+      <text class="ach-mono" font-size="10.5" letter-spacing="2" fill="#60A5FA">FAU ERLANGEN-NÜRNBERG</text>
       <text class="ach-serif" y="28" font-size="20" font-weight="300" fill="#F8FAFC">M.Sc. Computational Eng.</text>
       <text class="ach-sans" y="50" font-size="12" fill="#94A3B8">Structural Mechanics · Scientific Computing</text>
     </g>
-    <line x1="310" y1="18" x2="310" y2="88" stroke="#38BDF8" stroke-opacity=".15"/>
+    <line x1="310" y1="18" x2="310" y2="88" stroke="#1E293B"/>
     <g transform="translate(330 24)">
-      <text class="ach-mono" font-size="10.5" letter-spacing="2" fill="#38BDF8">AGENTIC FEA PROTOCOL</text>
+      <text class="ach-mono" font-size="10.5" letter-spacing="2" fill="#60A5FA">AGENTIC FEA PROTOCOL</text>
       <text class="ach-serif" y="28" font-size="20" font-weight="300" fill="#F8FAFC">Claude MCP + Ansys 2026</text>
       <text class="ach-sans" y="50" font-size="12" fill="#94A3B8">Autonomous Modal Vibration Analysis</text>
     </g>
-    <line x1="610" y1="18" x2="610" y2="88" stroke="#38BDF8" stroke-opacity=".15"/>
+    <line x1="610" y1="18" x2="610" y2="88" stroke="#1E293B"/>
     <g transform="translate(630 24)">
-      <text class="ach-mono" font-size="10.5" letter-spacing="2" fill="#38BDF8">FORMULA STUDENT RACING</text>
+      <text class="ach-mono" font-size="10.5" letter-spacing="2" fill="#60A5FA">FORMULA STUDENT RACING</text>
       <text class="ach-serif" y="28" font-size="20" font-weight="300" fill="#F8FAFC">CFK Monocoque Layup</text>
       <text class="ach-sans" y="50" font-size="12" fill="#94A3B8">FAU High Voltage Motorsports Chassis</text>
     </g>
-    <line x1="910" y1="18" x2="910" y2="88" stroke="#38BDF8" stroke-opacity=".15"/>
+    <line x1="910" y1="18" x2="910" y2="88" stroke="#1E293B"/>
     <g transform="translate(930 24)">
-      <text class="ach-mono" font-size="10.5" letter-spacing="2" fill="#38BDF8">STATUS &amp; MOBILITY</text>
+      <text class="ach-mono" font-size="10.5" letter-spacing="2" fill="#60A5FA">STATUS &amp; MOBILITY</text>
       <text class="ach-serif" y="28" font-size="20" font-weight="300" fill="#F8FAFC">English C2 · German B2</text>
       <text class="ach-sans" y="50" font-size="12" fill="#94A3B8">Driving License Class B · DACH &amp; Worldwide</text>
     </g>
