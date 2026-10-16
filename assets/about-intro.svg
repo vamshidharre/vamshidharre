@@ -5,77 +5,92 @@
     <linearGradient id="ab-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0E131E"/><stop offset="1" stop-color="#06080D"/></linearGradient>
     <radialGradient id="ab-glow" cx="80%" cy="20%" r="70%"><stop offset="0" stop-color="#1D4ED8" stop-opacity=".4"/><stop offset="1" stop-color="#1E3A8A" stop-opacity="0"/></radialGradient>
     <pattern id="ab-scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#F8FAFC" opacity=".025"/></pattern>
-    <clipPath id="ab-c0"><rect class="ab-type" x="68" y="110" width="95" height="24" style="animation-delay:0.60s;animation-duration:0.41s;animation-timing-function:steps(6)"/></clipPath>
-    <clipPath id="ab-c1"><rect class="ab-type" x="68" y="136" width="600" height="24" style="animation-delay:1.16s;animation-duration:0.53s;animation-timing-function:steps(1)"/></clipPath>
-    <clipPath id="ab-c2"><rect class="ab-type" x="68" y="162" width="195" height="24" style="animation-delay:2.04s;animation-duration:0.56s;animation-timing-function:steps(17)"/></clipPath>
-    <clipPath id="ab-c3"><rect class="ab-type" x="68" y="188" width="620" height="24" style="animation-delay:2.75s;animation-duration:0.53s;animation-timing-function:steps(1)"/></clipPath>
-    <clipPath id="ab-c4"><rect class="ab-type" x="68" y="214" width="205" height="24" style="animation-delay:3.63s;animation-duration:0.59s;animation-timing-function:steps(18)"/></clipPath>
-    <clipPath id="ab-c5"><rect class="ab-type" x="68" y="240" width="620" height="24" style="animation-delay:4.37s;animation-duration:0.53s;animation-timing-function:steps(1)"/></clipPath>
-    <clipPath id="ab-c6"><rect class="ab-type" x="68" y="266" width="150" height="24" style="animation-delay:5.25s;animation-duration:0.41s;animation-timing-function:steps(12)"/></clipPath>
-    <clipPath id="ab-c7"><rect class="ab-type" x="68" y="292" width="620" height="24" style="animation-delay:5.81s;animation-duration:0.53s;animation-timing-function:steps(1)"/></clipPath>
-    <clipPath id="ab-c8"><rect class="ab-type" x="68" y="318" width="180" height="24" style="animation-delay:6.69s;animation-duration:0.49s;animation-timing-function:steps(15)"/></clipPath>
-    <clipPath id="ab-c9"><rect class="ab-type" x="68" y="344" width="620" height="24" style="animation-delay:7.34s;animation-duration:0.53s;animation-timing-function:steps(1)"/></clipPath>
   </defs>
   <style>
     .ab-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, "Helvetica Neue", Arial, sans-serif; }
     .ab-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
-    .ab-type { transform-box: fill-box; transform-origin: left center; animation-name: ab-type; animation-fill-mode: both; }
     .ab-card { animation: ab-in 1s cubic-bezier(.16,1,.3,1) both; }
     .ab-fade { animation: ab-fade 1s ease both; }
-    @keyframes ab-type { 0% { transform: scaleX(0); } 85%, 100% { transform: scaleX(1); } }
     @keyframes ab-in { from { opacity: 0; transform: translateX(24px); } to { opacity: 1; transform: none; } }
     @keyframes ab-fade { from { opacity: 0; } to { opacity: 1; } }
-    @media (prefers-reduced-motion: reduce) { .ab-type, .ab-card, .ab-fade { animation: none; } }
+    @media (prefers-reduced-motion: reduce) { .ab-card, .ab-fade { animation: none; } }
   </style>
   <rect width="1200" height="420" rx="20" fill="url(#ab-bg)"/>
   <rect width="1200" height="420" rx="20" fill="url(#ab-glow)"/>
   <rect x=".5" y=".5" width="1199" height="419" rx="19.5" fill="none" stroke="#3B82F6" stroke-opacity=".2"/>
 
-  <!-- Stealth Terminal Window (Wider, Higher Contrast) -->
+  <!-- Terminal Window (Left: x=40 to 770, width=730) -->
   <g class="ab-fade">
-    <rect x="40" y="38" width="760" height="344" rx="14" fill="#070A10" stroke="#1E293B" stroke-width="1.4"/>
-    <rect x="40" y="38" width="760" height="344" rx="14" fill="url(#ab-scan)"/>
-    <path d="M40 52 a14 14 0 0 1 14 -14 H786 a14 14 0 0 1 14 14 V76 H40 Z" fill="#0F141F"/>
-    <line x1="40" y1="76" x2="800" y2="76" stroke="#1E293B" stroke-width="1.2"/>
-    <circle cx="62" cy="57" r="5" fill="#EF4444"/><circle cx="80" cy="57" r="5" fill="#F59E0B"/><circle cx="98" cy="57" r="5" fill="#10B981"/>
-    <text class="ab-mono" x="420" y="62" text-anchor="middle" font-size="12" font-weight="600" letter-spacing="1.5" fill="#CBD5E1">vamshidhar@cae-lab: ~</text>
+    <rect x="40" y="36" width="730" height="348" rx="14" fill="#070A10" stroke="#1E293B" stroke-width="1.3"/>
+    <rect x="40" y="36" width="730" height="348" rx="14" fill="url(#ab-scan)"/>
+    <path d="M40 50 a14 14 0 0 1 14 -14 H756 a14 14 0 0 1 14 14 V72 H40 Z" fill="#0F141F"/>
+    <line x1="40" y1="72" x2="770" y2="72" stroke="#1E293B" stroke-width="1.2"/>
+    <circle cx="62" cy="54" r="4.5" fill="#EF4444"/><circle cx="78" cy="54" r="4.5" fill="#F59E0B"/><circle cx="94" cy="54" r="4.5" fill="#10B981"/>
+    <text class="ab-mono" x="405" y="58" text-anchor="middle" font-size="11.5" font-weight="600" letter-spacing="1.2" fill="#CBD5E1">vamshidhar@cae-lab: ~</text>
   </g>
-  <g class="ab-mono" font-size="14" font-weight="500">
-      <g clip-path="url(#ab-c0)"><text x="72" y="126" fill="#60A5FA" font-weight="700">$</text><text x="96" y="126" fill="#FFFFFF" font-weight="600">whoami</text></g>
-      <g clip-path="url(#ab-c1)"><text x="72" y="152" fill="#3B82F6" font-weight="700">→</text><text x="96" y="152" fill="#E2E8F0">Vamshidhar Reddy · CAE, Structural Dynamics &amp; Scientific ML</text></g>
-      <g clip-path="url(#ab-c2)"><text x="72" y="178" fill="#60A5FA" font-weight="700">$</text><text x="96" y="178" fill="#FFFFFF" font-weight="600">cat education.txt</text></g>
-      <g clip-path="url(#ab-c3)"><text x="72" y="204" fill="#3B82F6" font-weight="700">→</text><text x="96" y="204" fill="#E2E8F0">M.Sc. Computational Engineering · FAU Erlangen-Nürnberg</text></g>
-      <g clip-path="url(#ab-c4)"><text x="72" y="230" fill="#60A5FA" font-weight="700">$</text><text x="96" y="230" fill="#FFFFFF" font-weight="600">cat experience.txt</text></g>
-      <g clip-path="url(#ab-c5)"><text x="72" y="256" fill="#3B82F6" font-weight="700">→</text><text x="96" y="256" fill="#E2E8F0">Mercedes-Benz (SciML Surrogates) · Valeo (E-Motor NVH Thesis)</text></g>
-      <g clip-path="url(#ab-c6)"><text x="72" y="282" fill="#60A5FA" font-weight="700">$</text><text x="96" y="282" fill="#FFFFFF" font-weight="600">ls ./automated</text></g>
-      <g clip-path="url(#ab-c7)"><text x="72" y="308" fill="#3B82F6" font-weight="700">→</text><text x="96" y="308" fill="#E2E8F0">ansys-claude-mcp  nastran-surrogate  simcenter-acoustics</text></g>
-      <g clip-path="url(#ab-c8)"><text x="72" y="334" fill="#60A5FA" font-weight="700">$</text><text x="96" y="334" fill="#FFFFFF" font-weight="600">echo $MISSION</text></g>
-      <g clip-path="url(#ab-c9)"><text x="72" y="360" fill="#3B82F6" font-weight="700">→</text><text x="96" y="360" fill="#E2E8F0">physics-grounded simulations · zero-compromise engineering precision</text></g>
+
+  <!-- Terminal Content: 100% Instantly Readable, High Contrast -->
+  <g class="ab-mono" font-size="13">
+    <!-- Line 1 -->
+    <text x="68" y="118" fill="#60A5FA" font-weight="700">$</text>
+    <text x="88" y="118" fill="#FFFFFF" font-weight="600">whoami</text>
+    <!-- Line 2 -->
+    <text x="68" y="142" fill="#3B82F6" font-weight="700">→</text>
+    <text x="88" y="142" fill="#E2E8F0">Vamshidhar Reddy · CAE &amp; Structural Dynamics Engineer</text>
+    <!-- Line 3 -->
+    <text x="68" y="168" fill="#60A5FA" font-weight="700">$</text>
+    <text x="88" y="168" fill="#FFFFFF" font-weight="600">cat education.txt</text>
+    <!-- Line 4 -->
+    <text x="68" y="192" fill="#3B82F6" font-weight="700">→</text>
+    <text x="88" y="192" fill="#E2E8F0">M.Sc. Computational Engineering · FAU Erlangen-Nürnberg</text>
+    <!-- Line 5 -->
+    <text x="68" y="218" fill="#60A5FA" font-weight="700">$</text>
+    <text x="88" y="218" fill="#FFFFFF" font-weight="600">cat experience.txt</text>
+    <!-- Line 6 -->
+    <text x="68" y="242" fill="#3B82F6" font-weight="700">→</text>
+    <text x="88" y="242" fill="#E2E8F0">Mercedes-Benz (SciML) · Valeo (E-Motor NVH Thesis)</text>
+    <!-- Line 7 -->
+    <text x="68" y="268" fill="#60A5FA" font-weight="700">$</text>
+    <text x="88" y="268" fill="#FFFFFF" font-weight="600">ls ./automated</text>
+    <!-- Line 8 -->
+    <text x="68" y="292" fill="#3B82F6" font-weight="700">→</text>
+    <text x="88" y="292" fill="#E2E8F0">ansys-claude-mcp  nastran-surrogate  simcenter-acoustics</text>
+    <!-- Line 9 -->
+    <text x="68" y="318" fill="#60A5FA" font-weight="700">$</text>
+    <text x="88" y="318" fill="#FFFFFF" font-weight="600">echo $MISSION</text>
+    <!-- Line 10 -->
+    <text x="68" y="342" fill="#3B82F6" font-weight="700">→</text>
+    <text x="88" y="342" fill="#E2E8F0">physics-grounded simulations · zero-compromise precision</text>
   </g>
-  <rect x="72" y="368" width="9" height="16" fill="#60A5FA" class="ab-fade" style="animation-delay:8.2s">
+
+  <!-- Blinking Terminal Cursor -->
+  <rect x="68" y="354" width="8" height="15" fill="#60A5FA">
     <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;.5;.5;1" dur="1.1s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- Right Side Executive Titanium Cards (Bold Sans-Serif, High Legibility) -->
-  <g class="ab-card" style="animation-delay:1.2s"><g transform="translate(836 70)">
-    <rect width="324" height="88" rx="14" fill="#0F141F" stroke="#2563EB" stroke-opacity=".35" stroke-width="1.2"/>
-    <rect x="0" y="0" width="4" height="88" rx="2" fill="#3B82F6"/>
-    <text class="ab-mono" x="22" y="26" font-size="11" font-weight="700" letter-spacing="2" fill="#60A5FA">CORE DOMAIN</text>
-    <text class="ab-sans" x="22" y="56" font-size="28" font-weight="800" fill="#FFFFFF">CAE &amp; FEA</text>
-    <text class="ab-sans" x="22" y="78" font-size="13.5" font-weight="400" fill="#CBD5E1">Ansys Mechanical · NASTRAN · Simcenter 3D</text>
+  <!-- Right Stacked Cards (x=800 to 1160, width=360) -->
+  <g class="ab-card" style="animation-delay:0.2s"><g transform="translate(800 48)">
+    <rect width="360" height="96" rx="14" fill="#0F141F" stroke="#2563EB" stroke-opacity=".35" stroke-width="1.2"/>
+    <rect x="0" y="0" width="4" height="96" rx="2" fill="#3B82F6"/>
+    <text class="ab-mono" x="22" y="26" font-size="10.5" font-weight="700" letter-spacing="2" fill="#60A5FA">CORE DOMAIN</text>
+    <text class="ab-sans" x="22" y="54" font-size="22" font-weight="800" fill="#FFFFFF">CAE &amp; FEA Solvers</text>
+    <text class="ab-sans" x="22" y="74" font-size="12.5" font-weight="500" fill="#CBD5E1">Ansys Mechanical (APDL, PyMechanical)</text>
+    <text class="ab-sans" x="22" y="89" font-size="11.5" font-weight="400" fill="#94A3B8">NASTRAN · Simcenter 3D · HyperMesh</text>
   </g></g>
-  <g class="ab-card" style="animation-delay:1.7s"><g transform="translate(836 174)">
-    <rect width="324" height="88" rx="14" fill="#0F141F" stroke="#2563EB" stroke-opacity=".35" stroke-width="1.2"/>
-    <rect x="0" y="0" width="4" height="88" rx="2" fill="#3B82F6"/>
-    <text class="ab-mono" x="22" y="26" font-size="11" font-weight="700" letter-spacing="2" fill="#60A5FA">WHERE ML ACCELERATES</text>
-    <text class="ab-sans" x="22" y="56" font-size="28" font-weight="800" fill="#FFFFFF">Scientific ML</text>
-    <text class="ab-sans" x="22" y="78" font-size="13.5" font-weight="400" fill="#CBD5E1">FRF Surrogates · PINNs · DIMGP · PyTorch</text>
+  <g class="ab-card" style="animation-delay:0.4s"><g transform="translate(800 162)">
+    <rect width="360" height="96" rx="14" fill="#0F141F" stroke="#2563EB" stroke-opacity=".35" stroke-width="1.2"/>
+    <rect x="0" y="0" width="4" height="96" rx="2" fill="#3B82F6"/>
+    <text class="ab-mono" x="22" y="26" font-size="10.5" font-weight="700" letter-spacing="2" fill="#60A5FA">WHERE ML ACCELERATES</text>
+    <text class="ab-sans" x="22" y="54" font-size="22" font-weight="800" fill="#FFFFFF">Scientific ML</text>
+    <text class="ab-sans" x="22" y="74" font-size="12.5" font-weight="500" fill="#CBD5E1">Physics-Informed ML &amp; FRF Surrogates</text>
+    <text class="ab-sans" x="22" y="89" font-size="11.5" font-weight="400" fill="#94A3B8">PINNs · DIMGP · PyTorch · scikit-learn</text>
   </g></g>
-  <g class="ab-card" style="animation-delay:2.2s"><g transform="translate(836 278)">
-    <rect width="324" height="88" rx="14" fill="#0F141F" stroke="#2563EB" stroke-opacity=".35" stroke-width="1.2"/>
-    <rect x="0" y="0" width="4" height="88" rx="2" fill="#3B82F6"/>
-    <text class="ab-mono" x="22" y="26" font-size="11" font-weight="700" letter-spacing="2" fill="#60A5FA">AUTOMATION EDGE</text>
-    <text class="ab-sans" x="22" y="56" font-size="28" font-weight="800" fill="#FFFFFF">Agentic Simulation</text>
-    <text class="ab-sans" x="22" y="78" font-size="13.5" font-weight="400" fill="#CBD5E1">Claude MCP · PyMechanical · NX Open API</text>
+  <g class="ab-card" style="animation-delay:0.6s"><g transform="translate(800 276)">
+    <rect width="360" height="96" rx="14" fill="#0F141F" stroke="#2563EB" stroke-opacity=".35" stroke-width="1.2"/>
+    <rect x="0" y="0" width="4" height="96" rx="2" fill="#3B82F6"/>
+    <text class="ab-mono" x="22" y="26" font-size="10.5" font-weight="700" letter-spacing="2" fill="#60A5FA">AUTOMATION EDGE</text>
+    <text class="ab-sans" x="22" y="54" font-size="22" font-weight="800" fill="#FFFFFF">Agentic Simulation</text>
+    <text class="ab-sans" x="22" y="74" font-size="12.5" font-weight="500" fill="#CBD5E1">Claude MCP Autonomous Simulation</text>
+    <text class="ab-sans" x="22" y="89" font-size="11.5" font-weight="400" fill="#94A3B8">PyMechanical API · NX Open · SLURM</text>
   </g></g>
 </svg>

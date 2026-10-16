@@ -29,24 +29,29 @@
     <rect x="720" width="480" height="370" fill="url(#p3-grid)"/>
     <rect width="1200" height="370" fill="url(#p3-glow)"/>
 
+    <!-- Left Column (x=50 to 660, safe width 610px) -->
     <g class="p3-in p3-d1">
-      <text class="p3-mono" x="56" y="62" font-size="12" font-weight="700" letter-spacing="2.6" fill="#60A5FA">03 · VIBROACOUSTICS · NX OPEN API AUTOMATION</text>
-      <text class="p3-sans" x="54" y="122" font-size="46" font-weight="800" letter-spacing="-1" fill="#FFFFFF">Acoustic &amp; SPL Field Solver</text>
-      <text class="p3-sans" x="56" y="162" font-size="17" font-weight="400" fill="#CBD5E1">Scripted acoustic environment simulation &amp; microphone array processing.</text>
-      <text class="p3-mono" x="56" y="198" font-size="13" font-weight="600" fill="#93C5FD"><tspan fill="#60A5FA">BUILT ›</tspan> Automated Simcenter 3D setups with NX Open API; simulated airborne noise &amp; ultrasonic fields</text>
-      <line class="p3-draw" x1="56" y1="226" x2="680" y2="226" stroke="#2563EB" stroke-opacity=".4" stroke-width="1.2"/>
+      <text class="p3-mono" x="50" y="56" font-size="11.5" font-weight="700" letter-spacing="2.4" fill="#60A5FA">03 · VIBROACOUSTICS · NX OPEN API AUTOMATION</text>
+      <text class="p3-sans" x="48" y="98" font-size="34" font-weight="800" letter-spacing="-0.5" fill="#FFFFFF">Acoustic &amp; SPL Field Solver</text>
+      <text class="p3-sans" x="50" y="130" font-size="14.5" font-weight="400" fill="#E2E8F0">Scripted acoustic environment simulation &amp; virtual microphone</text>
+      <text class="p3-sans" x="50" y="150" font-size="13.5" font-weight="400" fill="#CBD5E1">array processing in Simcenter 3D with NX Open API.</text>
+
+      <text class="p3-mono" x="50" y="182" font-size="12" font-weight="600" fill="#93C5FD"><tspan fill="#60A5FA">BUILT ›</tspan> Automated Simcenter 3D setups with NX Open API;</text>
+      <text class="p3-mono" x="50" y="200" font-size="12" font-weight="600" fill="#93C5FD">        simulated airborne noise &amp; ultrasonic fields</text>
+
+      <line class="p3-draw" x1="50" y1="222" x2="660" y2="222" stroke="#2563EB" stroke-opacity=".4" stroke-width="1.2"/>
 
       <!-- Metrics -->
-      <g transform="translate(56 266)"><text class="p3-sans" font-size="36" font-weight="800" fill="#FFFFFF">120+ Mics</text><text class="p3-sans" y="26" font-size="13" font-weight="500" fill="#94A3B8">Virtual spherical array</text></g>
-      <g transform="translate(261 266)"><text class="p3-sans" font-size="36" font-weight="800" fill="#FFFFFF">85%</text><text class="p3-sans" y="26" font-size="13" font-weight="500" fill="#94A3B8">Setup time reduction</text></g>
-      <g transform="translate(466 266)"><text class="p3-sans" font-size="36" font-weight="800" fill="#FFFFFF">Full SPL</text><text class="p3-sans" y="26" font-size="13" font-weight="500" fill="#94A3B8">Automated radiation maps</text></g>
+      <g transform="translate(50 262)"><text class="p3-sans" font-size="28" font-weight="800" fill="#FFFFFF">120+ Mics</text><text class="p3-sans" y="22" font-size="12" font-weight="500" fill="#94A3B8">Virtual spherical array</text></g>
+      <g transform="translate(240 262)"><text class="p3-sans" font-size="28" font-weight="800" fill="#FFFFFF">85%</text><text class="p3-sans" y="22" font-size="12" font-weight="500" fill="#94A3B8">Setup time reduction</text></g>
+      <g transform="translate(440 262)"><text class="p3-sans" font-size="28" font-weight="800" fill="#FFFFFF">Full SPL</text><text class="p3-sans" y="22" font-size="12" font-weight="500" fill="#94A3B8">Automated radiation maps</text></g>
 
       <!-- Chips -->
-      <g class="p3-chip" style="animation-delay:1.00s"><rect x="56" y="314" width="122" height="28" rx="14" fill="#111726" stroke="#2563EB" stroke-opacity=".5"/><text class="p3-mono" x="117" y="332" text-anchor="middle" font-size="12" font-weight="600" fill="#93C5FD">Simcenter 3D</text></g>
-      <g class="p3-chip" style="animation-delay:1.12s"><rect x="186" y="314" width="76" height="28" rx="14" fill="#111726" stroke="#2563EB" stroke-opacity=".5"/><text class="p3-mono" x="224" y="332" text-anchor="middle" font-size="12" font-weight="600" fill="#93C5FD">Python</text></g>
-      <g class="p3-chip" style="animation-delay:1.24s"><rect x="270" y="314" width="118" height="28" rx="14" fill="#111726" stroke="#2563EB" stroke-opacity=".5"/><text class="p3-mono" x="329" y="332" text-anchor="middle" font-size="12" font-weight="600" fill="#93C5FD">NX Open API</text></g>
-      <g class="p3-chip" style="animation-delay:1.36s"><rect x="396" y="314" width="112" height="28" rx="14" fill="#111726" stroke="#2563EB" stroke-opacity=".5"/><text class="p3-mono" x="452" y="332" text-anchor="middle" font-size="12" font-weight="600" fill="#93C5FD">Acoustic BEM</text></g>
-      <g class="p3-chip" style="animation-delay:1.48s"><rect x="516" y="314" width="122" height="28" rx="14" fill="#111726" stroke="#2563EB" stroke-opacity=".5"/><text class="p3-mono" x="577" y="332" text-anchor="middle" font-size="12" font-weight="600" fill="#93C5FD">Sound Power</text></g>
+      <g class="p3-chip" style="animation-delay:1.00s"><rect x="50" y="312" width="118" height="26" rx="13" fill="#111726" stroke="#2563EB" stroke-opacity=".5"/><text class="p3-mono" x="109" y="329" text-anchor="middle" font-size="11.5" font-weight="600" fill="#93C5FD">Simcenter 3D</text></g>
+      <g class="p3-chip" style="animation-delay:1.12s"><rect x="178" y="312" width="76" height="26" rx="13" fill="#111726" stroke="#2563EB" stroke-opacity=".5"/><text class="p3-mono" x="216" y="329" text-anchor="middle" font-size="11.5" font-weight="600" fill="#93C5FD">Python</text></g>
+      <g class="p3-chip" style="animation-delay:1.24s"><rect x="264" y="312" width="116" height="26" rx="13" fill="#111726" stroke="#2563EB" stroke-opacity=".5"/><text class="p3-mono" x="322" y="329" text-anchor="middle" font-size="11.5" font-weight="600" fill="#93C5FD">NX Open API</text></g>
+      <g class="p3-chip" style="animation-delay:1.36s"><rect x="390" y="312" width="112" height="26" rx="13" fill="#111726" stroke="#2563EB" stroke-opacity=".5"/><text class="p3-mono" x="446" y="329" text-anchor="middle" font-size="11.5" font-weight="600" fill="#93C5FD">Acoustic BEM</text></g>
+      <g class="p3-chip" style="animation-delay:1.48s"><rect x="512" y="312" width="116" height="26" rx="13" fill="#111726" stroke="#2563EB" stroke-opacity=".5"/><text class="p3-mono" x="570" y="329" text-anchor="middle" font-size="11.5" font-weight="600" fill="#93C5FD">Sound Power</text></g>
     </g>
 
     <!-- Right Side Acoustic Wavefront Radiation Visual -->
@@ -57,7 +62,6 @@
         <circle r="14" fill="#1D4ED8" stroke="#60A5FA" stroke-width="2"/>
         <circle r="4" fill="#F8FAFC"/>
 
-        <!-- Expanding Pressure Waves -->
         <circle r="35" fill="none" stroke="#60A5FA" stroke-width="1.8" stroke-opacity=".85">
           <animate attributeName="r" values="20;125" dur="3.5s" repeatCount="indefinite"/>
           <animate attributeName="opacity" values="1;0" dur="3.5s" repeatCount="indefinite"/>
@@ -71,7 +75,6 @@
           <animate attributeName="opacity" values="1;0" dur="3.5s" begin="2.4s" repeatCount="indefinite"/>
         </circle>
 
-        <!-- Spherical Microphone Array Points -->
         <g stroke="#3B82F6" stroke-width="1" stroke-dasharray="2 3" fill="none">
           <circle r="105"/>
         </g>
@@ -83,7 +86,7 @@
         </g>
       </g>
 
-      <g transform="translate(24 240)" class="p3-mono" font-size="11" font-weight="600">
+      <g transform="translate(24 240)" class="p3-mono" font-size="10.5" font-weight="600">
         <text fill="#60A5FA">SPL Radiation Field: 84 dB(A)</text>
       </g>
     </g>

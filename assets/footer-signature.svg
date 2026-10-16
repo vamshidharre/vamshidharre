@@ -9,7 +9,7 @@
       <stop offset="0" stop-color="#1D4ED8" stop-opacity=".45"/>
       <stop offset="1" stop-color="#1E3A8A" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="sig-line" gradientUnits="userSpaceOnUse" x1="100" y1="0" x2="1100" y2="0">
+    <linearGradient id="sig-line" gradientUnits="userSpaceOnUse" x1="150" y1="0" x2="1050" y2="0">
       <stop offset="0" stop-color="#1D4ED8" stop-opacity="0"/>
       <stop offset=".5" stop-color="#60A5FA"/>
       <stop offset="1" stop-color="#1D4ED8" stop-opacity="0"/>
@@ -18,7 +18,7 @@
   <style>
     .sig-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, "Helvetica Neue", Arial, sans-serif; }
     .sig-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
-    .sig-rule { stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: sig-draw 2.4s cubic-bezier(.65,0,.35,1) .6s forwards; }
+    .sig-rule { stroke-dasharray: 900; stroke-dashoffset: 900; animation: sig-draw 2.4s cubic-bezier(.65,0,.35,1) .6s forwards; }
     .sig-in { animation: sig-in 1.4s ease 1.2s both; }
     @keyframes sig-draw { to { stroke-dashoffset: 0; } }
     @keyframes sig-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
@@ -40,16 +40,16 @@
     <circle cx="915" cy="230" r="1.4"><animate attributeName="cy" values="232;78" dur="5.1s" begin="3.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.85;0" dur="5.1s" begin="3.5s" repeatCount="indefinite"/></circle>
   </g>
 
-  <!-- Modern Bold Signature Title -->
-  <text class="sig-sans sig-in" x="600" y="96" text-anchor="middle" font-size="42" font-weight="900" letter-spacing="4" fill="#FFFFFF">VAMSHIDHAR REDDY</text>
+  <!-- Modern Bold Title -->
+  <text class="sig-sans sig-in" x="600" y="88" text-anchor="middle" font-size="36" font-weight="900" letter-spacing="3" fill="#FFFFFF">VAMSHIDHAR REDDY</text>
 
-  <path class="sig-rule" d="M100 126 H1100" stroke="url(#sig-line)" stroke-width="1.4"/>
-  <circle cx="600" cy="126" r="3.5" fill="#F8FAFC" class="sig-in">
+  <path class="sig-rule" d="M150 120 H1050" stroke="url(#sig-line)" stroke-width="1.4"/>
+  <circle cx="600" cy="120" r="3.5" fill="#F8FAFC" class="sig-in">
     <animate attributeName="r" values="3.5;5.5;3.5" dur="3.2s" repeatCount="indefinite"/>
   </circle>
 
   <g class="sig-in">
-    <text class="sig-sans" x="600" y="168" text-anchor="middle" font-size="20" font-weight="500" fill="#E2E8F0">Engineering physics with computational rigor.</text>
-    <text class="sig-mono" x="600" y="198" text-anchor="middle" font-size="11.5" font-weight="600" letter-spacing="3" fill="#94A3B8">CAE &amp; STRUCTURAL DYNAMICS · SCIENTIFIC MACHINE LEARNING · AGENTIC SIMULATION</text>
+    <text class="sig-sans" x="600" y="160" text-anchor="middle" font-size="18" font-weight="500" fill="#E2E8F0">Engineering physics with computational rigor.</text>
+    <text class="sig-mono" x="600" y="192" text-anchor="middle" font-size="11" font-weight="600" letter-spacing="2" fill="#94A3B8">CAE &amp; STRUCTURAL DYNAMICS · SCIENTIFIC MACHINE LEARNING · AGENTIC SIMULATION</text>
   </g>
 </svg>

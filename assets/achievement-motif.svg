@@ -16,12 +16,12 @@
       <stop offset="1" stop-color="#1E3A8A" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="ach-outline" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#93C5FD" stop-opacity=".35"/>
-      <stop offset="1" stop-color="#3B82F6" stop-opacity="0"/>
+      <stop offset="0" stop-color="#60A5FA" stop-opacity=".15"/>
+      <stop offset="1" stop-color="#1D4ED8" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="ach-sheen" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".08"/>
+      <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".06"/>
       <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
     </linearGradient>
     <clipPath id="ach-clip-a"><rect x="0" y="0" width="700" height="250" rx="16"/></clipPath>
@@ -45,90 +45,82 @@
   <rect width="1200" height="430" rx="20" fill="url(#ach-bg)"/>
   <rect x=".5" y=".5" width="1199" height="429" rx="19.5" fill="none" stroke="#3B82F6" stroke-opacity=".2"/>
 
-  <!-- Card 1: Mercedes-Benz SciML Breakthrough (Left 700px) -->
+  <!-- Card 1: Mercedes-Benz (x=24, width=700, height=250) -->
   <g class="ach-in a1"><g transform="translate(24 24)">
     <g clip-path="url(#ach-clip-a)">
       <rect width="700" height="250" fill="#0F141F"/>
       <rect width="700" height="250" fill="url(#ach-glow-a)"/>
-      <text class="ach-sans" x="684" y="115" text-anchor="end" font-size="105" font-weight="900" letter-spacing="-3" fill="url(#ach-outline)">6h → ms</text>
+      <!-- Soft Watermark safely in upper right corner, completely clear of text -->
+      <text class="ach-sans" x="680" y="115" text-anchor="end" font-size="95" font-weight="900" letter-spacing="-3" fill="url(#ach-outline)">3,600×</text>
       <rect x="-300" y="0" width="260" height="250" fill="url(#ach-sheen)" transform="skewX(-18)">
         <animate attributeName="x" values="-300;900;900" keyTimes="0;.35;1" dur="9s" begin="2s" repeatCount="indefinite"/>
       </rect>
     </g>
     <rect width="700" height="250" rx="16" fill="none" stroke="#2563EB" stroke-opacity=".35" stroke-width="1.2"/>
 
-    <text class="ach-mono" x="32" y="38" font-size="11.5" font-weight="700" letter-spacing="2.4" fill="#60A5FA">SCIENTIFIC ML · MERCEDES-BENZ</text>
-    <text class="ach-sans" x="32" y="80" font-size="32" font-weight="800" letter-spacing="-0.5" fill="#FFFFFF">6-Hour FEA Solves to Milliseconds</text>
-    <text class="ach-sans" x="32" y="110" font-size="15" font-weight="400" fill="#CBD5E1">Benchmarked deep learning &amp; surrogate architectures predicting powertrain structural FRFs from NASTRAN.</text>
-    <text class="ach-mono" x="32" y="136" font-size="12.5" font-weight="600" fill="#93C5FD">Achieved highest curve-prediction skill score with HistGradientBoosting &amp; DIMGP.</text>
-
-    <!-- Stat Pillars -->
-    <g transform="translate(32 176)">
-      <text class="ach-sans" font-size="34" font-weight="800" fill="#FFFFFF">3,600×</text>
-      <text class="ach-sans" y="24" font-size="12.5" font-weight="500" fill="#94A3B8">Simulation Speedup</text>
-    </g>
-    <g transform="translate(240 176)">
-      <text class="ach-sans" font-size="34" font-weight="800" fill="#FFFFFF">0.982</text>
-      <text class="ach-sans" y="24" font-size="12.5" font-weight="500" fill="#94A3B8">FRF Curve Skill Score</text>
-    </g>
-    <g transform="translate(450 176)">
-      <text class="ach-sans" font-size="34" font-weight="800" fill="#FFFFFF">100%</text>
-      <text class="ach-sans" y="24" font-size="12.5" font-weight="500" fill="#94A3B8">DOE Dynamic Fidelity</text>
-    </g>
+    <!-- Content strictly located in the lower half (y >= 154) - ZERO collision with watermark -->
+    <text class="ach-mono" x="36" y="154" font-size="11.5" font-weight="700" letter-spacing="2.4" fill="#60A5FA">SCIENTIFIC ML · MERCEDES-BENZ</text>
+    <text class="ach-sans" x="34" y="200" font-size="38" font-weight="800" letter-spacing="-0.5" fill="#FFFFFF">6h FEA Solves to Milliseconds</text>
+    <text class="ach-sans" x="36" y="228" font-size="14" font-weight="400" fill="#CBD5E1">Benchmarked deep learning &amp; surrogate architectures predicting structural FRFs</text>
   </g></g>
 
-  <!-- Card 2: Valeo Master Thesis NVH (Right 476px) -->
+  <!-- Card 2: Valeo (x=748, width=428, height=250) -->
   <g class="ach-in a2"><g transform="translate(748 24)">
     <g clip-path="url(#ach-clip-b)">
       <rect width="428" height="250" fill="#0F141F"/>
       <rect width="428" height="250" fill="url(#ach-glow-b)"/>
-      <text class="ach-sans" x="412" y="115" text-anchor="end" font-size="95" font-weight="900" letter-spacing="-3" fill="url(#ach-outline)">VALEO</text>
+      <text class="ach-sans" x="410" y="115" text-anchor="end" font-size="80" font-weight="900" letter-spacing="-3" fill="url(#ach-outline)">VALEO</text>
       <rect x="-300" y="0" width="260" height="250" fill="url(#ach-sheen)" transform="skewX(-18)">
         <animate attributeName="x" values="-300;700;700" keyTimes="0;.35;1" dur="9s" begin="3.5s" repeatCount="indefinite"/>
       </rect>
     </g>
     <rect width="428" height="250" rx="16" fill="none" stroke="#2563EB" stroke-opacity=".35" stroke-width="1.2"/>
 
-    <text class="ach-mono" x="28" y="38" font-size="11.5" font-weight="700" letter-spacing="2.4" fill="#60A5FA">MASTER THESIS · VALEO EAUTOMOTIVE</text>
-    <text class="ach-sans" x="28" y="80" font-size="28" font-weight="800" letter-spacing="-0.5" fill="#FFFFFF">E-Motor Stator NVH Isolation</text>
-    <text class="ach-sans" x="28" y="110" font-size="14.5" font-weight="400" fill="#CBD5E1">FEA modal &amp; harmonic response correlating stator natural frequencies with physical test benches.</text>
-
-    <!-- Stat Pillars -->
-    <g transform="translate(28 176)">
-      <text class="ach-sans" font-size="34" font-weight="800" fill="#FFFFFF">16 Orders</text>
-      <text class="ach-sans" y="24" font-size="12.5" font-weight="500" fill="#94A3B8">Electromagnetic Harmonics</text>
-    </g>
-    <g transform="translate(220 176)">
-      <text class="ach-sans" font-size="34" font-weight="800" fill="#FFFFFF">96.4%</text>
-      <text class="ach-sans" y="24" font-size="12.5" font-weight="500" fill="#94A3B8">Test Bench Correlation</text>
-    </g>
+    <!-- Content strictly in lower half -->
+    <text class="ach-mono" x="32" y="154" font-size="11.5" font-weight="700" letter-spacing="2.4" fill="#60A5FA">MASTER THESIS · VALEO EAUTOMOTIVE</text>
+    <text class="ach-sans" x="30" y="200" font-size="38" font-weight="800" letter-spacing="-0.5" fill="#FFFFFF">E-Motor Stator NVH</text>
+    <text class="ach-sans" x="32" y="228" font-size="14" font-weight="400" fill="#CBD5E1">Resonance isolation correlated with physical test benches</text>
   </g></g>
 
-  <!-- Bottom Metric Strip (4 columns) -->
-  <g class="ach-in a3" transform="translate(24 298)">
-    <rect width="1152" height="106" rx="14" fill="#0A0E17" stroke="#1E293B" stroke-width="1.2"/>
-    <g transform="translate(32 24)">
-      <text class="ach-mono" font-size="11" font-weight="700" letter-spacing="2" fill="#60A5FA">FAU ERLANGEN-NÜRNBERG</text>
-      <text class="ach-sans" y="28" font-size="20" font-weight="700" fill="#FFFFFF">M.Sc. Computational Eng.</text>
-      <text class="ach-sans" y="52" font-size="13" font-weight="400" fill="#CBD5E1">Structural Mechanics · Scientific Computing</text>
+  <!-- Animated Hairline Divider across Score Strip -->
+  <path class="ach-draw" d="M24 300 H1176" stroke="#2563EB" stroke-opacity=".35" stroke-width="1.2"/>
+
+  <!-- Score Strip: 5 Spacious Pillars with Big Stats, Zero Clutter -->
+  <g class="ach-in a3 ach-sans">
+    <!-- Pillar 1: Solve Speedup -->
+    <g transform="translate(36 300)">
+      <circle cx="0" cy="0" r="3.5" fill="#60A5FA"/>
+      <text class="ach-mono" y="34" font-size="11" font-weight="700" letter-spacing="2" fill="#60A5FA">SOLVE SPEEDUP</text>
+      <text class="ach-sans" y="78" font-size="38" font-weight="800" fill="#FFFFFF">3,600×</text>
+      <text class="ach-sans" y="102" font-size="13" font-weight="400" fill="#94A3B8">6h NASTRAN to ms</text>
     </g>
-    <line x1="310" y1="18" x2="310" y2="88" stroke="#1E293B"/>
-    <g transform="translate(330 24)">
-      <text class="ach-mono" font-size="11" font-weight="700" letter-spacing="2" fill="#60A5FA">AGENTIC FEA PROTOCOL</text>
-      <text class="ach-sans" y="28" font-size="20" font-weight="700" fill="#FFFFFF">Claude MCP + Ansys 2026</text>
-      <text class="ach-sans" y="52" font-size="13" font-weight="400" fill="#CBD5E1">Autonomous Modal Vibration Analysis</text>
+    <!-- Pillar 2: Skill Score -->
+    <g transform="translate(266 300)">
+      <circle cx="0" cy="0" r="3.5" fill="#60A5FA"/>
+      <text class="ach-mono" y="34" font-size="11" font-weight="700" letter-spacing="2" fill="#60A5FA">SKILL SCORE</text>
+      <text class="ach-sans" y="78" font-size="38" font-weight="800" fill="#FFFFFF">0.982</text>
+      <text class="ach-sans" y="102" font-size="13" font-weight="400" fill="#94A3B8">FRF curve prediction</text>
     </g>
-    <line x1="610" y1="18" x2="610" y2="88" stroke="#1E293B"/>
-    <g transform="translate(630 24)">
-      <text class="ach-mono" font-size="11" font-weight="700" letter-spacing="2" fill="#60A5FA">FORMULA STUDENT RACING</text>
-      <text class="ach-sans" y="28" font-size="20" font-weight="700" fill="#FFFFFF">CFK Monocoque Layup</text>
-      <text class="ach-sans" y="52" font-size="13" font-weight="400" fill="#CBD5E1">FAU High Voltage Motorsports Chassis</text>
+    <!-- Pillar 3: Bench Correlation -->
+    <g transform="translate(496 300)">
+      <circle cx="0" cy="0" r="3.5" fill="#60A5FA"/>
+      <text class="ach-mono" y="34" font-size="11" font-weight="700" letter-spacing="2" fill="#60A5FA">BENCH ACCURACY</text>
+      <text class="ach-sans" y="78" font-size="38" font-weight="800" fill="#FFFFFF">96.4%</text>
+      <text class="ach-sans" y="102" font-size="13" font-weight="400" fill="#94A3B8">stator NVH correlation</text>
     </g>
-    <line x1="910" y1="18" x2="910" y2="88" stroke="#1E293B"/>
-    <g transform="translate(930 24)">
-      <text class="ach-mono" font-size="11" font-weight="700" letter-spacing="2" fill="#60A5FA">STATUS &amp; MOBILITY</text>
-      <text class="ach-sans" y="28" font-size="20" font-weight="700" fill="#FFFFFF">English C2 · German B2</text>
-      <text class="ach-sans" y="52" font-size="13" font-weight="400" fill="#CBD5E1">Driving License Class B · DACH &amp; Global</text>
+    <!-- Pillar 4: Autonomous FEA -->
+    <g transform="translate(726 300)">
+      <circle cx="0" cy="0" r="3.5" fill="#60A5FA"/>
+      <text class="ach-mono" y="34" font-size="11" font-weight="700" letter-spacing="2" fill="#60A5FA">AUTONOMOUS FEA</text>
+      <text class="ach-sans" y="78" font-size="38" font-weight="800" fill="#FFFFFF">100%</text>
+      <text class="ach-sans" y="102" font-size="13" font-weight="400" fill="#94A3B8">Claude MCP + Ansys</text>
+    </g>
+    <!-- Pillar 5: Education -->
+    <g transform="translate(956 300)">
+      <circle cx="0" cy="0" r="3.5" fill="#60A5FA"/>
+      <text class="ach-mono" y="34" font-size="11" font-weight="700" letter-spacing="2" fill="#60A5FA">ACADEMIC DEGREE</text>
+      <text class="ach-sans" y="78" font-size="38" font-weight="800" fill="#FFFFFF">M.Sc.</text>
+      <text class="ach-sans" y="102" font-size="13" font-weight="400" fill="#94A3B8">FAU Computational Eng.</text>
     </g>
   </g>
 </svg>

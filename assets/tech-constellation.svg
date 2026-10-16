@@ -35,7 +35,7 @@
 
   <!-- Constellation: Gutters Linking Six Groups -->
   <path class="tc-web" d="M24 250 H1176 M406 24 V476 M794 24 V476" fill="none" stroke="#2563EB" stroke-opacity=".25"/>
-  <circle cx="0" cy="250" r="8" fill="url(#tc-pulse)" opacity="0">
+  <circle cx="0" cy="250" r="7" fill="url(#tc-pulse)" opacity="0">
     <animate attributeName="cx" values="24;1176" dur="9s" begin="3s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines=".45 0 .55 1"/>
     <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.9;1" dur="9s" begin="3s" repeatCount="indefinite"/>
   </circle>
@@ -44,57 +44,81 @@
     <rect x="788" y="244" width="12" height="12" transform="rotate(45 794 250)"/>
   </g>
 
-  <!-- Panel 1: CAE & FEA Solvers -->
-  <g class="tc-panel tc-p1"><g transform="translate(32 32)">
+  <!-- Panel 1: CAE & FEA Solvers (width 360, safe text width 310) -->
+  <g class="tc-panel tc-p1"><g transform="translate(30 30)">
     <rect width="360" height="200" rx="14" fill="#0F141F" fill-opacity=".85" stroke="#2563EB" stroke-opacity=".25"/>
-    <text class="tc-mono" x="24" y="38" font-size="11.5" font-weight="700" letter-spacing="2.4" fill="#60A5FA">01  CAE &amp; FEA SOLVERS</text>
-    <text class="tc-sans" x="24" y="84" font-size="28" font-weight="800" fill="#FFFFFF">Ansys Mechanical <tspan font-size="11" class="tc-mono" font-weight="700" fill="#60A5FA" dy="-12">CORE</tspan></text>
-    <text class="tc-sans" x="24" y="128" font-size="24" font-weight="700" fill="#E2E8F0">NASTRAN · Simcenter 3D</text>
-    <text class="tc-sans" x="24" y="168" font-size="19" font-weight="500" fill="#94A3B8">HyperMesh · Abaqus · OpenCFS</text>
+    <text class="tc-mono" x="22" y="34" font-size="11" font-weight="700" letter-spacing="2" fill="#60A5FA">01  CAE &amp; FEA SOLVERS</text>
+    <text class="tc-sans" x="22" y="74" font-size="22" font-weight="800" fill="#FFFFFF">Ansys Mechanical</text>
+    <text class="tc-sans" x="22" y="112" font-size="17" font-weight="600" fill="#E2E8F0">NASTRAN · Simcenter 3D</text>
+    <text class="tc-sans" x="22" y="144" font-size="13.5" font-weight="400" fill="#94A3B8">HyperMesh · Abaqus · OpenCFS</text>
+    <g transform="translate(22 162)">
+      <rect width="170" height="22" rx="11" fill="#111726" stroke="#2563EB" stroke-opacity=".4"/>
+      <text class="tc-mono" x="85" y="15" text-anchor="middle" font-size="10.5" font-weight="600" fill="#93C5FD">APDL · PyMechanical API</text>
+    </g>
   </g></g>
 
   <!-- Panel 2: Scientific ML & Surrogates -->
-  <g class="tc-panel tc-p2"><g transform="translate(420 32)">
+  <g class="tc-panel tc-p2"><g transform="translate(420 30)">
     <rect width="360" height="200" rx="14" fill="#0F141F" fill-opacity=".85" stroke="#2563EB" stroke-opacity=".25"/>
-    <text class="tc-mono" x="24" y="38" font-size="11.5" font-weight="700" letter-spacing="2.4" fill="#60A5FA">02  SCIENTIFIC ML &amp; SURROGATES</text>
-    <text class="tc-sans" x="24" y="84" font-size="28" font-weight="800" fill="#FFFFFF">PyTorch · scikit-learn</text>
-    <text class="tc-sans" x="24" y="128" font-size="24" font-weight="700" fill="#E2E8F0">FRF Surrogates · PINNs</text>
-    <text class="tc-sans" x="24" y="168" font-size="19" font-weight="500" fill="#94A3B8">DIMGP · Neural Operators · POD-ROM</text>
+    <text class="tc-mono" x="22" y="34" font-size="11" font-weight="700" letter-spacing="2" fill="#60A5FA">02  SCIENTIFIC ML</text>
+    <text class="tc-sans" x="22" y="74" font-size="22" font-weight="800" fill="#FFFFFF">PyTorch · scikit-learn</text>
+    <text class="tc-sans" x="22" y="112" font-size="17" font-weight="600" fill="#E2E8F0">FRF Surrogates · PINNs</text>
+    <text class="tc-sans" x="22" y="144" font-size="13.5" font-weight="400" fill="#94A3B8">DIMGP · Neural Operators</text>
+    <g transform="translate(22 162)">
+      <rect width="180" height="22" rx="11" fill="#111726" stroke="#2563EB" stroke-opacity=".4"/>
+      <text class="tc-mono" x="90" y="15" text-anchor="middle" font-size="10.5" font-weight="600" fill="#93C5FD">Surrogate Modeling · DOE</text>
+    </g>
   </g></g>
 
   <!-- Panel 3: Vibroacoustics & NVH -->
-  <g class="tc-panel tc-p3"><g transform="translate(808 32)">
+  <g class="tc-panel tc-p3"><g transform="translate(810 30)">
     <rect width="360" height="200" rx="14" fill="#0F141F" fill-opacity=".85" stroke="#2563EB" stroke-opacity=".25"/>
-    <text class="tc-mono" x="24" y="38" font-size="11.5" font-weight="700" letter-spacing="2.4" fill="#60A5FA">03  VIBROACOUSTICS &amp; NVH</text>
-    <text class="tc-sans" x="24" y="84" font-size="28" font-weight="800" fill="#FFFFFF">Modal &amp; Harmonic Response</text>
-    <text class="tc-sans" x="24" y="128" font-size="24" font-weight="700" fill="#E2E8F0">FFT &amp; Order Tracking</text>
-    <text class="tc-sans" x="24" y="168" font-size="19" font-weight="500" fill="#94A3B8">SPL Sound Fields · Maxwell Mapping</text>
+    <text class="tc-mono" x="22" y="34" font-size="11" font-weight="700" letter-spacing="2" fill="#60A5FA">03  VIBROACOUSTICS &amp; NVH</text>
+    <text class="tc-sans" x="22" y="74" font-size="22" font-weight="800" fill="#FFFFFF">Modal &amp; Harmonic</text>
+    <text class="tc-sans" x="22" y="112" font-size="17" font-weight="600" fill="#E2E8F0">FFT &amp; Order Tracking</text>
+    <text class="tc-sans" x="22" y="144" font-size="13.5" font-weight="400" fill="#94A3B8">SPL Acoustic Fields · Maxwell</text>
+    <g transform="translate(22 162)">
+      <rect width="180" height="22" rx="11" fill="#111726" stroke="#2563EB" stroke-opacity=".4"/>
+      <text class="tc-mono" x="90" y="15" text-anchor="middle" font-size="10.5" font-weight="600" fill="#93C5FD">Stator Resonance Isolation</text>
+    </g>
   </g></g>
 
   <!-- Panel 4: Agentic & Automation -->
-  <g class="tc-panel tc-p4"><g transform="translate(32 268)">
+  <g class="tc-panel tc-p4"><g transform="translate(30 270)">
     <rect width="360" height="200" rx="14" fill="#0F141F" fill-opacity=".85" stroke="#2563EB" stroke-opacity=".25"/>
-    <text class="tc-mono" x="24" y="38" font-size="11.5" font-weight="700" letter-spacing="2.4" fill="#60A5FA">04  AGENTIC &amp; SIMULATION AI</text>
-    <text class="tc-sans" x="24" y="84" font-size="28" font-weight="800" fill="#FFFFFF">Claude MCP <tspan font-size="11" class="tc-mono" font-weight="700" fill="#60A5FA" dy="-12">PROTOCOL</tspan></text>
-    <text class="tc-sans" x="24" y="128" font-size="24" font-weight="700" fill="#E2E8F0">PyMechanical · NX Open API</text>
-    <text class="tc-sans" x="24" y="168" font-size="19" font-weight="500" fill="#94A3B8">SLURM HPC · Linux Bash · Git</text>
+    <text class="tc-mono" x="22" y="34" font-size="11" font-weight="700" letter-spacing="2" fill="#60A5FA">04  AGENTIC &amp; SIMULATION AI</text>
+    <text class="tc-sans" x="22" y="74" font-size="22" font-weight="800" fill="#FFFFFF">Claude MCP Protocol</text>
+    <text class="tc-sans" x="22" y="112" font-size="17" font-weight="600" fill="#E2E8F0">PyMechanical · NX Open</text>
+    <text class="tc-sans" x="22" y="144" font-size="13.5" font-weight="400" fill="#94A3B8">SLURM HPC · Linux Bash · Git</text>
+    <g transform="translate(22 162)">
+      <rect width="170" height="22" rx="11" fill="#111726" stroke="#2563EB" stroke-opacity=".4"/>
+      <text class="tc-mono" x="85" y="15" text-anchor="middle" font-size="10.5" font-weight="600" fill="#93C5FD">Autonomous FEA Pipeline</text>
+    </g>
   </g></g>
 
   <!-- Panel 5: Software & Computation -->
-  <g class="tc-panel tc-p5"><g transform="translate(420 268)">
+  <g class="tc-panel tc-p5"><g transform="translate(420 270)">
     <rect width="360" height="200" rx="14" fill="#0F141F" fill-opacity=".85" stroke="#2563EB" stroke-opacity=".25"/>
-    <text class="tc-mono" x="24" y="38" font-size="11.5" font-weight="700" letter-spacing="2.4" fill="#60A5FA">05  PROGRAMMING &amp; WEB</text>
-    <text class="tc-sans" x="24" y="84" font-size="28" font-weight="800" fill="#FFFFFF">Python <tspan font-size="11" class="tc-mono" font-weight="700" fill="#60A5FA" dy="-12">PRIMARY</tspan></text>
-    <text class="tc-sans" x="24" y="128" font-size="24" font-weight="700" fill="#E2E8F0">C++ · TypeScript</text>
-    <text class="tc-sans" x="24" y="168" font-size="19" font-weight="500" fill="#94A3B8">React · Three.js · Docker · FastAPI</text>
+    <text class="tc-mono" x="22" y="34" font-size="11" font-weight="700" letter-spacing="2" fill="#60A5FA">05  PROGRAMMING &amp; WEB</text>
+    <text class="tc-sans" x="22" y="74" font-size="22" font-weight="800" fill="#FFFFFF">Python &amp; C++</text>
+    <text class="tc-sans" x="22" y="112" font-size="17" font-weight="600" fill="#E2E8F0">TypeScript · React</text>
+    <text class="tc-sans" x="22" y="144" font-size="13.5" font-weight="400" fill="#94A3B8">Three.js · Docker · FastAPI</text>
+    <g transform="translate(22 162)">
+      <rect width="160" height="22" rx="11" fill="#111726" stroke="#2563EB" stroke-opacity=".4"/>
+      <text class="tc-mono" x="80" y="15" text-anchor="middle" font-size="10.5" font-weight="600" fill="#93C5FD">Scientific Computing</text>
+    </g>
   </g></g>
 
   <!-- Panel 6: Affiliations & Credentials -->
-  <g class="tc-panel tc-p6"><g transform="translate(808 268)">
+  <g class="tc-panel tc-p6"><g transform="translate(810 270)">
     <rect width="360" height="200" rx="14" fill="#0F141F" fill-opacity=".85" stroke="#2563EB" stroke-opacity=".25"/>
-    <text class="tc-mono" x="24" y="38" font-size="11.5" font-weight="700" letter-spacing="2.4" fill="#60A5FA">06  AFFILIATIONS &amp; CREDS</text>
-    <text class="tc-sans" x="24" y="84" font-size="28" font-weight="800" fill="#FFFFFF">FAU Erlangen-Nürnberg</text>
-    <text class="tc-sans" x="24" y="128" font-size="24" font-weight="700" fill="#E2E8F0">Mercedes-Benz · Valeo</text>
-    <text class="tc-sans" x="24" y="168" font-size="19" font-weight="500" fill="#94A3B8">English C2 · German B2 · Class B</text>
+    <text class="tc-mono" x="22" y="34" font-size="11" font-weight="700" letter-spacing="2" fill="#60A5FA">06  AFFILIATIONS &amp; CREDS</text>
+    <text class="tc-sans" x="22" y="74" font-size="22" font-weight="800" fill="#FFFFFF">FAU Erlangen-Nürnberg</text>
+    <text class="tc-sans" x="22" y="112" font-size="17" font-weight="600" fill="#E2E8F0">Mercedes-Benz · Valeo</text>
+    <text class="tc-sans" x="22" y="144" font-size="13.5" font-weight="400" fill="#94A3B8">English C2 · German B2 · Class B</text>
+    <g transform="translate(22 162)">
+      <rect width="150" height="22" rx="11" fill="#111726" stroke="#2563EB" stroke-opacity=".4"/>
+      <text class="tc-mono" x="75" y="15" text-anchor="middle" font-size="10.5" font-weight="600" fill="#93C5FD">M.Sc. Computational Eng</text>
+    </g>
   </g></g>
 </svg>

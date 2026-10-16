@@ -32,27 +32,32 @@
     <rect x="720" width="480" height="370" fill="url(#p1-grid)"/>
     <rect width="1200" height="370" fill="url(#p1-glow)"/>
 
+    <!-- Left Column (x=50 to 660, safe width 610px) -->
     <g class="p1-in p1-d1">
-      <text class="p1-mono" x="56" y="62" font-size="12" font-weight="700" letter-spacing="2.6" fill="#60A5FA">01 · AGENTIC CAE · ANSYS 2026 R1 · MCP</text>
-      <text class="p1-sans" x="54" y="122" font-size="46" font-weight="800" letter-spacing="-1" fill="#FFFFFF">Agentic FEA: Modal Analysis</text>
-      <text class="p1-sans" x="56" y="162" font-size="17" font-weight="400" fill="#CBD5E1">3D aerospace bracket modal vibration analysis via Claude MCP &amp; PyMechanical.</text>
-      <text class="p1-mono" x="56" y="198" font-size="13" font-weight="600" fill="#93C5FD"><tspan fill="#60A5FA">PIPELINE ›</tspan> CAD import → solid meshing → contact pairs → Block Lanczos eigenvalue solve → contour plots</text>
-      <line class="p1-draw" x1="56" y1="226" x2="680" y2="226" stroke="#2563EB" stroke-opacity=".4" stroke-width="1.2"/>
+      <text class="p1-mono" x="50" y="56" font-size="11.5" font-weight="700" letter-spacing="2.4" fill="#60A5FA">01 · AGENTIC CAE · ANSYS 2026 R1 · MCP</text>
+      <text class="p1-sans" x="48" y="98" font-size="34" font-weight="800" letter-spacing="-0.5" fill="#FFFFFF">Agentic FEA: Modal Analysis</text>
+      <text class="p1-sans" x="50" y="130" font-size="14.5" font-weight="400" fill="#E2E8F0">Autonomous 3D aerospace bracket modal vibration analysis</text>
+      <text class="p1-sans" x="50" y="150" font-size="13.5" font-weight="400" fill="#CBD5E1">orchestrated via Claude MCP &amp; PyMechanical on Ansys 2026 R1.</text>
+
+      <text class="p1-mono" x="50" y="182" font-size="12" font-weight="600" fill="#93C5FD"><tspan fill="#60A5FA">BUILT ›</tspan> CAD import → solid meshing → contact pairs</text>
+      <text class="p1-mono" x="50" y="200" font-size="12" font-weight="600" fill="#93C5FD">        → Block Lanczos eigenvalue solve → contour plots</text>
+
+      <line class="p1-draw" x1="50" y1="222" x2="660" y2="222" stroke="#2563EB" stroke-opacity=".4" stroke-width="1.2"/>
 
       <!-- Metrics -->
-      <g transform="translate(56 266)"><text class="p1-sans" font-size="36" font-weight="800" fill="#FFFFFF">6 Modes</text><text class="p1-sans" y="26" font-size="13" font-weight="500" fill="#94A3B8">Eigenvalue extraction</text></g>
-      <g transform="translate(261 266)"><text class="p1-sans" font-size="36" font-weight="800" fill="#FFFFFF">100%</text><text class="p1-sans" y="26" font-size="13" font-weight="500" fill="#94A3B8">Autonomous simulation</text></g>
-      <g transform="translate(466 266)"><text class="p1-sans" font-size="36" font-weight="800" fill="#FFFFFF">Zero-Click</text><text class="p1-sans" y="26" font-size="13" font-weight="500" fill="#94A3B8">CAD to contour plots</text></g>
+      <g transform="translate(50 262)"><text class="p1-sans" font-size="28" font-weight="800" fill="#FFFFFF">6 Modes</text><text class="p1-sans" y="22" font-size="12" font-weight="500" fill="#94A3B8">Eigenvalue extraction</text></g>
+      <g transform="translate(240 262)"><text class="p1-sans" font-size="28" font-weight="800" fill="#FFFFFF">100%</text><text class="p1-sans" y="22" font-size="12" font-weight="500" fill="#94A3B8">Autonomous simulation</text></g>
+      <g transform="translate(440 262)"><text class="p1-sans" font-size="28" font-weight="800" fill="#FFFFFF">Zero-Click</text><text class="p1-sans" y="22" font-size="12" font-weight="500" fill="#94A3B8">CAD to contour plots</text></g>
 
-      <!-- Chips -->
-      <g class="p1-chip" style="animation-delay:1.00s"><rect x="56" y="314" width="132" height="28" rx="14" fill="#111726" stroke="#2563EB" stroke-opacity=".5"/><text class="p1-mono" x="122" y="332" text-anchor="middle" font-size="12" font-weight="600" fill="#93C5FD">Ansys 2026 R1</text></g>
-      <g class="p1-chip" style="animation-delay:1.12s"><rect x="198" y="314" width="112" height="28" rx="14" fill="#111726" stroke="#2563EB" stroke-opacity=".5"/><text class="p1-mono" x="254" y="332" text-anchor="middle" font-size="12" font-weight="600" fill="#93C5FD">PyMechanical</text></g>
-      <g class="p1-chip" style="animation-delay:1.24s"><rect x="320" y="314" width="102" height="28" rx="14" fill="#111726" stroke="#2563EB" stroke-opacity=".5"/><text class="p1-mono" x="371" y="332" text-anchor="middle" font-size="12" font-weight="600" fill="#93C5FD">Claude MCP</text></g>
-      <g class="p1-chip" style="animation-delay:1.36s"><rect x="432" y="314" width="112" height="28" rx="14" fill="#111726" stroke="#2563EB" stroke-opacity=".5"/><text class="p1-mono" x="488" y="332" text-anchor="middle" font-size="12" font-weight="600" fill="#93C5FD">Block Lanczos</text></g>
-      <g class="p1-chip" style="animation-delay:1.48s"><rect x="554" y="314" width="76" height="28" rx="14" fill="#111726" stroke="#2563EB" stroke-opacity=".5"/><text class="p1-mono" x="592" y="332" text-anchor="middle" font-size="12" font-weight="600" fill="#93C5FD">Python</text></g>
+      <!-- Chips (Safely fitted inside 610px width) -->
+      <g class="p1-chip" style="animation-delay:1.00s"><rect x="50" y="312" width="126" height="26" rx="13" fill="#111726" stroke="#2563EB" stroke-opacity=".5"/><text class="p1-mono" x="113" y="329" text-anchor="middle" font-size="11.5" font-weight="600" fill="#93C5FD">Ansys 2026 R1</text></g>
+      <g class="p1-chip" style="animation-delay:1.12s"><rect x="186" y="312" width="112" height="26" rx="13" fill="#111726" stroke="#2563EB" stroke-opacity=".5"/><text class="p1-mono" x="242" y="329" text-anchor="middle" font-size="11.5" font-weight="600" fill="#93C5FD">PyMechanical</text></g>
+      <g class="p1-chip" style="animation-delay:1.24s"><rect x="308" y="312" width="100" height="26" rx="13" fill="#111726" stroke="#2563EB" stroke-opacity=".5"/><text class="p1-mono" x="358" y="329" text-anchor="middle" font-size="11.5" font-weight="600" fill="#93C5FD">Claude MCP</text></g>
+      <g class="p1-chip" style="animation-delay:1.36s"><rect x="418" y="312" width="112" height="26" rx="13" fill="#111726" stroke="#2563EB" stroke-opacity=".5"/><text class="p1-mono" x="474" y="329" text-anchor="middle" font-size="11.5" font-weight="600" fill="#93C5FD">Block Lanczos</text></g>
+      <g class="p1-chip" style="animation-delay:1.48s"><rect x="540" y="312" width="76" height="26" rx="13" fill="#111726" stroke="#2563EB" stroke-opacity=".5"/><text class="p1-mono" x="578" y="329" text-anchor="middle" font-size="11.5" font-weight="600" fill="#93C5FD">Python</text></g>
     </g>
 
-    <!-- Right Side 3D FEA Bracket Visual Artwork -->
+    <!-- Right Side 3D FEA Bracket Visual Artwork (x=760 to 1150) -->
     <g class="p1-in p1-d2" transform="translate(760 40)">
       <g stroke="#3B82F6" stroke-width="1.3" fill="none">
         <polygon points="50,220 180,270 330,210 200,160" fill="#0C1322" stroke="#1D4ED8" stroke-width="1.5"/>
@@ -76,24 +81,24 @@
         </path>
       </g>
 
-      <circle cx="95" cy="235" r="7" fill="#06080D" stroke="#EF4444" stroke-width="1.5"/>
-      <circle cx="280" cy="225" r="7" fill="#06080D" stroke="#EF4444" stroke-width="1.5"/>
-      <circle cx="180" cy="65" r="8" fill="#06080D" stroke="#10B981" stroke-width="1.8"/>
+      <circle cx="95" cy="235" r="6" fill="#06080D" stroke="#EF4444" stroke-width="1.5"/>
+      <circle cx="280" cy="225" r="6" fill="#06080D" stroke="#EF4444" stroke-width="1.5"/>
+      <circle cx="180" cy="65" r="7" fill="#06080D" stroke="#10B981" stroke-width="1.8"/>
 
-      <g transform="translate(250 30)" class="p1-mono">
-        <rect width="130" height="28" rx="6" fill="#0B111C" stroke="#2563EB" stroke-opacity=".5"/>
-        <circle cx="14" cy="14" r="3.5" fill="#60A5FA"/>
-        <text x="26" y="18" font-size="11" font-weight="600" fill="#F8FAFC">f₁: 142.8 Hz</text>
+      <g transform="translate(245 28)" class="p1-mono">
+        <rect width="135" height="26" rx="6" fill="#0B111C" stroke="#2563EB" stroke-opacity=".5"/>
+        <circle cx="14" cy="13" r="3.5" fill="#60A5FA"/>
+        <text x="26" y="17" font-size="11" font-weight="600" fill="#F8FAFC">f₁: 142.8 Hz</text>
       </g>
-      <g transform="translate(260 70)" class="p1-mono">
-        <rect width="130" height="28" rx="6" fill="#0B111C" stroke="#1D4ED8" stroke-opacity=".5"/>
-        <circle cx="14" cy="14" r="3.5" fill="#3B82F6"/>
-        <text x="26" y="18" font-size="11" font-weight="600" fill="#CBD5E1">f₂: 284.1 Hz</text>
+      <g transform="translate(255 64)" class="p1-mono">
+        <rect width="135" height="26" rx="6" fill="#0B111C" stroke="#1D4ED8" stroke-opacity=".5"/>
+        <circle cx="14" cy="13" r="3.5" fill="#3B82F6"/>
+        <text x="26" y="17" font-size="11" font-weight="600" fill="#CBD5E1">f₂: 284.1 Hz</text>
       </g>
-      <g transform="translate(250 110)" class="p1-mono">
-        <rect width="130" height="28" rx="6" fill="#0B111C" stroke="#1E3A8A" stroke-opacity=".5"/>
-        <circle cx="14" cy="14" r="3.5" fill="#1E3A8A"/>
-        <text x="26" y="18" font-size="11" font-weight="600" fill="#CBD5E1">f₃: 412.5 Hz</text>
+      <g transform="translate(245 100)" class="p1-mono">
+        <rect width="135" height="26" rx="6" fill="#0B111C" stroke="#1E3A8A" stroke-opacity=".5"/>
+        <circle cx="14" cy="13" r="3.5" fill="#1E3A8A"/>
+        <text x="26" y="17" font-size="11" font-weight="600" fill="#CBD5E1">f₃: 412.5 Hz</text>
       </g>
     </g>
   </g>
